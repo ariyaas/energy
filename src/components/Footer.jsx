@@ -68,8 +68,8 @@ export default function Footer() {
             <h4 className="footerTitle">Get In Touch</h4>
             <ul className="footerLinks">
               <li>📍 Chennai, Tamil Nadu</li>
-              <li>📞 +91 98765 43210</li>
-              <li>✉️ info@seapol.com</li>
+              <li>📞 +91 95006 99955</li>
+              <li>✉️ enqenergy@seapol.com</li>
             </ul>
           </div>
 

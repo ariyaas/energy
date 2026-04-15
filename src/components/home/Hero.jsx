@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import hero1 from "../../assets/solar-installation.webp";
 import hero2 from "../../assets/solar-farm.webp";
+import logo from "../../assets/newlogo.png";
 
 export default function Hero({ onQuoteClick }) {
 
@@ -14,6 +15,7 @@ export default function Hero({ onQuoteClick }) {
 
   const [textIndex, setTextIndex] = useState(0);
   const [imageIndex, setImageIndex] = useState(0);
+  const [showLogo, setShowLogo] = useState(true);
 
   // change text every 3s
   useEffect(() => {
@@ -31,10 +33,40 @@ export default function Hero({ onQuoteClick }) {
     return () => clearInterval(interval);
   }, []);
 
+  useEffect(() => {
+  const handleScroll = () => {
+    if (window.scrollY > 100) {
+      setShowLogo(false);
+    } else {
+      setShowLogo(true);
+    }
+  };
+
+  window.addEventListener("scroll", handleScroll);
+  return () => window.removeEventListener("scroll", handleScroll);
+}, []);
+
+  
   const images = [hero1, hero2];
 
   return (
-   <section className="relative h-[65vh] sm:h-[75vh] md:h-[85vh] w-full overflow-hidden">
+<section className="relative mt-[70px] md:mt-[80px] h-[65vh] sm:h-[75vh] md:h-[85vh] w-full overflow-hidden">
+
+    
+{/* LOGO TOP RIGHT */}
+<div
+  className={`absolute top-[20px] md:top-[40px] right-4 sm:right-6 z-40 transition-all duration-500 ${
+    showLogo
+      ? "opacity-100 translate-y-0"
+      : "opacity-0 -translate-y-5 pointer-events-none"
+  }`}
+>
+  <img
+    src={logo}
+    alt="Evoke Energy"
+    className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
+  />
+</div>
 
       {/* BACKGROUND IMAGE SLIDER */}
       {images.map((img, i) => (
@@ -49,7 +81,7 @@ export default function Hero({ onQuoteClick }) {
 ))}
 
       {/* BLACK GRADIENT OVERLAY */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/50 to-black/50" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/40 via-black/40 to-black/40 z-0" />
 
       {/* CENTER CONTENT */}
      <div className="relative z-10 h-full flex items-start md:items-center justify-center text-center px-6 pt-32 md:pt-0">
@@ -80,7 +112,7 @@ text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[76px]">
 
        <button
   onClick={onQuoteClick}
-  className="mainBtn text-base sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
+  className="mainBtn text-black sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
 >
   Get Free Quote →
 </button>

@@ -45,7 +45,7 @@ export default function About() {
           </p>
 
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B1F33] max-w-3xl mx-auto leading-tight">
-          Seapol is driving the future with sustainable solar energy
+          Seapol energy is driving the future with sustainable solar energy
           </h2>
         </motion.div>
 

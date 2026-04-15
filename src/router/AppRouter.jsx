@@ -27,6 +27,7 @@ import About from "../pages/About"
 import Services from "../pages/Services"
 import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
+import SolarCalculatorPage from "../pages/SolarCalculator"
 
 export default function AppRoutes({ openQuote }) {
   
@@ -40,6 +41,7 @@ export default function AppRoutes({ openQuote }) {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
+        <Route path="/solar-calculator" element={<SolarCalculatorPage />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

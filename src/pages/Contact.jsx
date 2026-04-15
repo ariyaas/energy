@@ -92,7 +92,7 @@ export default function Contact() {
                 <h3 className="sectionTitle">Company Information</h3>
 
                 <div className="space-y-4 md:space-y-5 text-gray-600 text-sm md:text-base">
-                  <p className="infoRow"><FaPhoneAlt /> +91 12345 67890</p>
+                  <p className="infoRow"><FaPhoneAlt /> +91 95006 99955</p>
                   <p className="infoRow"><FaEnvelope /> energy@seapol.com</p>
                   <p className="infoRow items-start">
                     <FaMapMarkerAlt className="mt-1"/>

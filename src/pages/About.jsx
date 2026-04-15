@@ -1,4 +1,5 @@
 import PageBanner from "../components/PageBanner";
+import installationsImg from "../assets/installations.png";
 import {
   FaSolarPanel,
   FaIndustry,
@@ -32,43 +33,85 @@ export default function About({ onQuoteClick }) {
 </section>
 
       {/* ================= CEO MESSAGE (NEW SECTION) ================= */}
-    <section className="bg-[#F7F9FC] py-16 md:py-20">
-  <div className="max-w-7xl mx-auto px-5 md:px-6 grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+ {/* ================= CEO MESSAGE (FINAL PERFECT ALIGN) ================= */}
+<section className="bg-[#F7F9FC] py-16 md:py-20">
+  <div className="max-w-7xl mx-auto px-5 md:px-6">
 
-    {/* IMAGE */}
-    <div className="rounded-3xl overflow-hidden shadow-xl h-[260px] sm:h-[320px] md:h-[420px]">
-      <img
-        src={solarWorker}
-        alt="Solar worker"
-        className="w-full h-full object-cover"
-      />
+    {/* 🔹 TOP SECTION */}
+    <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-start mb-12">
+
+      {/* IMAGE */}
+      <div className="rounded-3xl overflow-hidden shadow-xl h-[260px] sm:h-[320px] md:h-[420px] self-start">
+        <img
+          src={solarWorker}
+          alt="Solar worker"
+          className="w-full h-full object-cover"
+        />
+      </div>
+
+      {/* TEXT */}
+      <div className="max-w-xl">
+
+        <p className="text-[#84cc16] font-semibold mb-2 text-sm uppercase tracking-wide">
+          From the Desk of CEO & CTO
+        </p>
+
+        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B1F33] mb-5 leading-snug">
+          Engineering Expertise Meets Solar Innovation
+        </h3>
+
+        {/* ✅ FIRST PARAGRAPH */}
+        <p className="text-gray-700 text-sm md:text-base leading-[1.8] text-justify mb-4">
+          With nearly 30 years of dedicated experience in the field of Electrical Engineering,
+          I have been afforded the privilege of spearheading truly innovative projects and
+          cultivating deep, authoritative expertise in my domain.
+        </p>
+
+        {/* ✅ MOVED SECOND PARAGRAPH (NOW TOP) */}
+        <p className="text-gray-700 text-sm md:text-base leading-[1.8] text-justify">
+          My seven year presence within the dynamic solar industry has been consistently driven
+          by one singular, powerful purpose: the unwavering commitment to creating robust,
+          reliable, and truly future-ready energy solutions.
+        </p>
+
+      </div>
+
     </div>
 
-    {/* TEXT */}
-    <div className="animate-fade-in">
-      <p className="text-[#84cc16] font-semibold mb-2 md:mb-3 text-sm md:text-base">
-        FROM THE DESK OF CEO & CTO
+    {/* 🔹 FULL CONTENT (BOTTOM) */}
+    <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-sm md:text-base leading-[1.8] tracking-wide text-justify">
+
+      <p>
+        A pivotal moment in this ambitious journey is our recent amalgamation as an Engineering,
+        Procurement, and Construction (EPC) Solar Company with SEAPOL, a distinguished Logistics
+        Enterprise boasting more than three decades of operational experience. This landmark event
+        marks the strategic birth of SEAPOL Energy Private Limited.
       </p>
 
-      <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B1F33] mb-4 md:mb-6 leading-tight">
-        Engineering Expertise Meets Solar Innovation
-      </h3>
-
-      <p className="text-gray-600 leading-relaxed mb-4 md:mb-5 text-sm md:text-base">
-        With nearly 30 years of experience in Electrical Engineering,
-        Seapol Energy delivers reliable and future-ready solar EPC solutions.
+      <p>
+        This powerful synergy strategically unites my profound engineering focus with their
+        extensive operational depth, equipping our combined entity with the enhanced capability
+        to deliver solar installations that are larger, faster, and demonstrably more efficient
+        than ever before.
       </p>
 
-      <p className="text-gray-600 leading-relaxed text-sm md:text-base">
-        Our partnership with leading solar technology providers allows us to
-        deliver projects that are larger, faster and more efficient —
-        creating real value for our clients.
+      <p>
+        Furthermore, our long-standing and productive association as a valued channel partner of
+        Evolve Energies Pvt Ltd strengthens our dedication to supplying high-performance solutions.
+        These solutions are consistently backed by foundational principles of innovation and trust.
       </p>
+
+      <p>
+        This strategic collaboration not only fortifies our competitive standing within the market
+        but also grants us the ability to seamlessly leverage cutting-edge technologies and an
+        significantly expanded support network. Ultimately, this translates directly into superior
+        value and benefits for our most valued clients—i.e., YOU.
+      </p>
+
     </div>
 
   </div>
 </section>
-
 
 {/* ================= COMPANY STATS ================= */}
 <section className="bg-[#0B1F33] py-16 md:py-20">
@@ -126,42 +169,37 @@ export default function About({ onQuoteClick }) {
   </div>
 </section>
 
-{/* ================= OUR EXPERTISE ================= */}
 
 
-     {/* ================= WHY CHOOSE US ================= */}
-<section className="bg-[#F7F9FC] py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-5 md:px-6 text-center mb-10 md:mb-16">
-    <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F33]">
-      Our <span className="text-[#84cc16]">Expertise</span>
-    </h2>
-  </div>
 
-  <div className="max-w-7xl mx-auto px-5 md:px-6 grid sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+<section className="bg-white py-16 md:py-24">
+  <div className="max-w-7xl mx-auto px-5 md:px-6">
 
-    {[
-      { icon:<FaHome/>, title:"Residential Solar" },
-      { icon:<FaBuilding/>, title:"Commercial Solar" },
-      { icon:<FaIndustry/>, title:"Industrial Solar" },
-      { icon:<FaSolarPanel/>, title:"Utility Solar Parks" },
-    ].map((item,i)=>(
-      <div key={i}
-        className="bg-white p-6 md:p-10 rounded-3xl text-center shadow-md
-        hover:-translate-y-3 hover:shadow-2xl transition duration-500">
+    {/* TITLE */}
+    <div className="text-center mb-10 md:mb-14">
+      <h2 className="text-2xl sm:text-3xl md:text-5xl font-bold text-[#0B1F33] tracking-wide">
+        INSTALLATIONS
+      </h2>
 
-        <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-4 rounded-xl bg-[#ECFDF5]
-                        flex items-center justify-center text-[#84cc16] text-2xl md:text-3xl animate-pulse">
-          {item.icon}
-        </div>
+      <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-sm md:text-base">
+        Our successful installations across residential, commercial and industrial sectors
+        demonstrate our expertise in delivering efficient and reliable solar solutions.
+      </p>
+    </div>
 
-        <h3 className="font-semibold text-[#0B1F33] text-sm md:text-lg">
-          {item.title}
-        </h3>
-      </div>
-    ))}
+    {/* IMAGE */}
+    <div className="rounded-2xl md:rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-500">
+      <img
+        src={installationsImg}
+        alt="Solar Installations"
+        className="w-full h-auto object-cover"
+      />
+    </div>
 
   </div>
 </section>
+
+    
      
 
       {/* ================= CTA ================= */}

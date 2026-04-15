@@ -3,7 +3,7 @@ import { FaWhatsapp } from "react-icons/fa";
 export default function WhatsAppButton() {
   return (
     <a
-      href="https://wa.me/918111040090?text=Hello%20I%20am%20interested%20in%20solar%20solutions"
+      href="https://wa.me/919500699955?text=Hello%20I%20am%20interested%20in%20solar%20solutions"
       target="_blank"
       rel="noopener noreferrer"
       className="whatsappFloat fixed bottom-2 right-2 z-50

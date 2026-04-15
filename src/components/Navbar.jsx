@@ -44,6 +44,7 @@ export default function Navbar({ openQuote }) {
   <Link to="/about" className="navLink">About</Link>
   <Link to="/services" className="navLink">Services</Link>
   <Link to="/projects" className="navLink">Projects</Link>
+  <Link to="/solar-calculator" className="navLink">Calculator</Link>
   <Link to="/contact" className="navLink">Contact</Link>
 </nav>
   <div className="justify-self-end hidden lg:block">
@@ -99,6 +100,7 @@ export default function Navbar({ openQuote }) {
       { name: "About", path: "/about" },
       { name: "Services", path: "/services" },
       { name: "Projects", path: "/projects" },
+      { name: "Calculator", path: "/solar-calculator" },
       { name: "Contact", path: "/contact" },
     ].map((item, i) => (
       <Link
@@ -126,7 +128,7 @@ export default function Navbar({ openQuote }) {
         </div>
         <div>
           <p className="text-sm text-gray-500">Call Us</p>
-          <p className="font-semibold">+49 (03) 9834 939 99</p>
+          <p className="font-semibold">+91 9500699955</p>
         </div>
       </div>
 
@@ -136,7 +138,7 @@ export default function Navbar({ openQuote }) {
         </div>
         <div>
           <p className="text-sm text-gray-500">Send Email</p>
-          <p className="font-semibold">info@email.com</p>
+          <p className="font-semibold">enqenergy@seapol.com</p>
         </div>
       </div>
     </div>

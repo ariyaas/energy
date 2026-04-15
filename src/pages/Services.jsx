@@ -7,6 +7,14 @@ import {
   FaBolt,
 } from "react-icons/fa";
 
+import solarTypesImg from "../assets/solar-types.png"; // your image
+import servicehouse from "../assets/housemobile.webp"; // your image
+import streetLightImg from "../assets/street-light.png"; // your image
+import containerHomeImg from "../assets/container-home.png"; // your image
+
+import { FaSolarPanel, FaCarBattery, FaRupeeSign } from "react-icons/fa";
+import serviceImg from "../assets/solar-ev.png";
+
 export default function Services({ onQuoteClick }) {
   return (
     <>
@@ -127,6 +135,455 @@ export default function Services({ onQuoteClick }) {
 
   </div>
 </section>
+
+
+
+
+<section className="py-16 md:py-28 bg-white">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+
+    {/* IMAGE */}
+    <div className="rounded-3xl overflow-hidden shadow-xl group">
+      <img
+        src={containerHomeImg}
+        alt="Solar Container Home"
+        className="w-full h-[260px] sm:h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition duration-500"
+      />
+    </div>
+
+    {/* CONTENT */}
+    <div>
+
+      {/* TITLE */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B1F33] mb-4 md:mb-6 leading-tight">
+        Off-Grid Solar <span className="text-[#84cc16]">Container Homes</span>
+      </h2>
+
+      {/* INTRO */}
+      <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-5 md:mb-6">
+        Experience modern, sustainable living anywhere — from hills and remote villages 
+        to resorts and agricultural lands. Our solar-powered container homes deliver 
+        complete energy independence without relying on grid electricity.
+      </p>
+
+      {/* FEATURES */}
+      <div className="space-y-4 md:space-y-5 text-gray-700 text-sm sm:text-base">
+
+        <div>
+          <p className="font-semibold text-[#0B1F33]">⚡ 100% Off-Grid Power</p>
+          <p>Hybrid solar system ensures continuous electricity in remote locations.</p>
+        </div>
+
+        <div>
+          <p className="font-semibold text-[#0B1F33]">🔋 Battery Backup</p>
+          <p>Lithium battery provides up to 7 hours of power after sunset.</p>
+        </div>
+
+        <div>
+          <p className="font-semibold text-[#0B1F33]">❄ Climate Controlled</p>
+          <p>Efficient air conditioning designed for solar-powered performance.</p>
+        </div>
+
+        <div>
+          <p className="font-semibold text-[#0B1F33]">🏡 Modern Living Setup</p>
+          <p>Supports TV, LED lighting, fans, and complete electrical setup.</p>
+        </div>
+
+      </div>
+
+      {/* HIGHLIGHT */}
+      <div className="mt-6 bg-[#F0FDF4] border-l-4 border-[#84cc16] p-4 rounded-lg">
+        <p className="text-sm md:text-base text-gray-700">
+          💡 <span className="font-semibold">Perfect for:</span> 
+          Hill stations, resorts, farmhouses, tourism projects, and rural areas without electricity.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+      {/* ================= SOLAR  mobile control SYSTEM TYPES ================= */}  
+<section className="py-16 md:py-28 bg-white">
+  <div className="max-w-7xl mx-auto px-4 md:px-6 grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+
+    {/* LEFT CONTENT */}
+    <div className="animate-up">
+
+      <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#0B1F33] mb-4 md:mb-6 leading-tight">
+        Remote Solar <span className="text-[#84cc16]">Monitoring</span>
+      </h2>
+
+      <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-4 md:mb-6">
+        Remote solar monitoring allows you to track energy production and system health directly from your smartphone.
+      </p>
+
+      <p className="text-gray-700 text-sm sm:text-base md:text-lg mb-6 md:mb-8">
+        These apps provide real-time insights and complete control over your solar system performance.
+      </p>
+
+      {/* FEATURES */}
+      <div className="space-y-4 md:space-y-6">
+
+        <div>
+          <h4 className="font-semibold text-[#0B1F33] text-base md:text-lg mb-1 md:mb-2">
+            ⚡ Real-Time Energy Flow
+          </h4>
+          <p className="text-gray-600 text-xs sm:text-sm md:text-base">
+            Track energy from solar to home, grid, or battery in real-time.
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-[#0B1F33] text-base md:text-lg mb-1 md:mb-2">
+            📊 Performance Analytics
+          </h4>
+          <p className="text-gray-600 text-xs sm:text-sm md:text-base">
+            View daily, monthly, and yearly performance insights.
+          </p>
+        </div>
+
+        <div>
+          <h4 className="font-semibold text-[#0B1F33] text-base md:text-lg mb-1 md:mb-2">
+            🔍 Panel-Level Monitoring
+          </h4>
+          <p className="text-gray-600 text-xs sm:text-sm md:text-base">
+            Detect issues instantly with panel-level tracking.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="relative group">
+
+      {/* Glow effect */}
+      <div className="absolute -inset-2 bg-gradient-to-r from-[#84cc16] to-[#FFC107] blur-2xl opacity-20 group-hover:opacity-40 transition duration-500 rounded-3xl"></div>
+
+      <img
+        src={servicehouse}
+        alt="Solar Monitoring App"
+        className="
+          relative rounded-3xl shadow-2xl
+          w-full 
+          max-w-sm sm:max-w-md md:max-w-lg
+          h-[300px] sm:h-[320px] md:h-[620px]
+          object-cover mx-auto
+          transform group-hover:scale-105 transition duration-500
+        "
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<section className="py-20 md:py-28 bg-white">
+  <div className="max-w-7xl mx-auto px-5 md:px-6 grid md:grid-cols-2 gap-12 items-center">
+
+    {/* LEFT CONTENT */}
+    <div>
+
+      {/* TITLE */}
+      <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B1F33] mb-6 leading-tight">
+        Solar + EV Charging Solution
+      </h2>
+
+      {/* INTRO */}
+      <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+        Integrating a <span className="font-semibold text-[#84cc16]">10 kW Solar System</span> with an EV is one of the smartest financial moves for a homeowner in 2026. 
+        Given your professional focus on solar energy and logistics, you'll appreciate the high ROI and efficiency of this setup.
+      </p>
+
+      <p className="text-base md:text-lg text-gray-700 mb-6">
+        Here is the breakdown of the savings and technical requirements for your 10 kW system.
+      </p>
+
+      {/* SECTION 1 */}
+      <h3 className="text-xl md:text-2xl font-bold text-[#0B1F33] mb-3">
+        1. Financial Impact: Savings per KM
+      </h3>
+
+      <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
+        In India, the cost of running a petrol car in 2026 is roughly ₹6.5 – ₹7.5 per km, 
+        while a grid-charged EV costs about ₹1.2 – ₹1.5 per km. By using your own solar power, 
+        that cost drops to nearly zero.
+      </p>
+
+      {/* TABLE */}
+      <div className="overflow-x-auto mb-6">
+        <table className="w-full text-sm md:text-base border rounded-xl overflow-hidden">
+          <thead className="bg-[#84cc16] text-white">
+            <tr>
+              <th className="p-3 text-left">Fuel Source</th>
+              <th className="p-3 text-center">Cost / KM</th>
+              <th className="p-3 text-center">Monthly (1000 km)</th>
+              <th className="p-3 text-center">Annual Savings</th>
+            </tr>
+          </thead>
+          <tbody className="text-gray-700 bg-white">
+            <tr className="border-b">
+              <td className="p-3">Petrol</td>
+              <td className="text-center">₹7.00</td>
+              <td className="text-center">₹7,000</td>
+              <td className="text-center">—</td>
+            </tr>
+            <tr className="border-b">
+              <td className="p-3">Grid Electricity</td>
+              <td className="text-center">₹1.20</td>
+              <td className="text-center">₹1,200</td>
+              <td className="text-center text-green-600 font-semibold">₹69,600</td>
+            </tr>
+            <tr>
+              <td className="p-3">Solar (Self-Gen)</td>
+              <td className="text-center">₹0.00*</td>
+              <td className="text-center">₹0</td>
+              <td className="text-center">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      {/* NOTE */}
+      <p className="text-sm text-gray-500 mb-8">
+        Note: While there is an upfront installation cost, the "fuel" becomes free after the 3–4 year payback period.
+      </p>
+
+      {/* SECTION 2 */}
+      <h3 className="text-xl md:text-2xl font-bold text-[#0B1F33] mb-3">
+        2. Technical Capacity: 10 kW Solar System
+      </h3>
+
+      <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+        A 10 kW system is robust and typically generates 
+        <span className="font-semibold"> 40–50 units (kWh) per day </span> 
+        in Tamil Nadu’s sunny climate.
+      </p>
+
+    </div>
+
+    {/* RIGHT IMAGE */}
+    <div className="rounded-3xl overflow-hidden shadow-xl">
+      <img
+        src={serviceImg}
+        alt="Solar EV Charging"
+        className="w-full h-full object-cover"
+      />
+    </div>
+
+  </div>
+</section>
+
+
+
+
+
+
+
+<section className="bg-white py-20 md:py-28">
+  <div className="max-w-7xl mx-auto px-5 md:px-6">
+
+    {/* TITLE */}
+    <div className="text-center mb-12">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B1F33] mb-4">
+        Solar System Types
+      </h2>
+      <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg">
+        Choosing the right solar system depends on your goals — saving on bills, 
+        backup during outages, or complete energy independence.
+      </p>
+    </div>
+
+    {/* IMAGE */}
+    <div className="rounded-3xl overflow-hidden shadow-xl mb-16">
+      <img
+        src={solarTypesImg}
+        alt="Solar System Types"
+        className="w-full object-cover"
+      />
+    </div>
+
+    {/* CARDS */}
+    <div className="grid md:grid-cols-3 gap-8">
+
+      {/* ON GRID */}
+      <div className="bg-[#F8FAFC] rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold text-[#0B1F33] mb-3">1. On-Grid System</h3>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">Best for:</span> Reducing electricity bills in stable areas.
+        </p>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">How it works:</span> Connected to the grid. 
+          Solar powers your home first, excess goes to grid. At night, grid supplies power.
+        </p>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">Components:</span> Panels + Inverter (No battery)
+        </p>
+
+        <p className="text-sm text-red-500">
+          <span className="font-semibold">Limitation:</span> No power during outages.
+        </p>
+      </div>
+
+      {/* OFF GRID */}
+      <div className="bg-[#F8FAFC] rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold text-[#0B1F33] mb-3">2. Off-Grid System</h3>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">Best for:</span> Remote areas without grid.
+        </p>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">How it works:</span> Fully independent. 
+          Generates power and stores in batteries for night use.
+        </p>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">Components:</span> Panels + Controller + Battery + Inverter
+        </p>
+
+        <p className="text-sm text-red-500">
+          <span className="font-semibold">Limitation:</span> High cost (battery required)
+        </p>
+      </div>
+
+      {/* HYBRID */}
+      <div className="bg-[#F8FAFC] rounded-2xl p-6 shadow hover:shadow-lg transition">
+        <h3 className="text-xl font-bold text-[#0B1F33] mb-3">3. Hybrid System</h3>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">Best for:</span> Backup + savings
+        </p>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">How it works:</span> Uses solar first, then battery, then grid.
+        </p>
+
+        <p className="text-sm text-gray-600 mb-3">
+          <span className="font-semibold">Components:</span> Panels + Hybrid Inverter + Battery
+        </p>
+
+        <p className="text-sm text-green-600">
+          <span className="font-semibold">Advantage:</span> Works during power cuts
+        </p>
+      </div>
+
+    </div>
+
+    {/* COMPARISON */}
+    <div className="mt-16 overflow-x-auto">
+      <h3 className="text-2xl font-bold text-[#0B1F33] mb-6 text-center">
+        Comparison Across Sectors
+      </h3>
+
+      <table className="w-full text-sm border rounded-xl overflow-hidden">
+        <thead className="bg-[#84cc16] text-white">
+          <tr>
+            <th className="p-3">Feature</th>
+            <th className="p-3">Residential</th>
+            <th className="p-3">Commercial</th>
+            <th className="p-3">Industrial</th>
+          </tr>
+        </thead>
+        <tbody className="text-gray-700">
+          <tr className="border-b">
+            <td className="p-3">Goal</td>
+            <td>Reduce bills</td>
+            <td>Peak shaving</td>
+            <td>Heavy load offset</td>
+          </tr>
+          <tr className="border-b">
+            <td className="p-3">System</td>
+            <td>On-Grid / Hybrid</td>
+            <td>Mostly On-Grid</td>
+            <td>On-Grid</td>
+          </tr>
+          <tr className="border-b">
+            <td className="p-3">Space</td>
+            <td>Rooftop</td>
+            <td>Large roofs</td>
+            <td>Ground / sheds</td>
+          </tr>
+          <tr>
+            <td className="p-3">Complexity</td>
+            <td>Simple</td>
+            <td>Medium</td>
+            <td>High</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    {/* TIP */}
+    <div className="mt-10 bg-[#F0FDF4] border-l-4 border-[#84cc16] p-6 rounded-xl">
+      <p className="text-sm md:text-base text-gray-700">
+        💡 <span className="font-semibold">Tip:</span> 
+        If your goal is ROI, choose <b>On-Grid</b>. 
+        If you need backup during power cuts, go for <b>Hybrid</b>.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+{/* light solution  */}
+
+<section className="py-16 md:py-24 bg-[#F4F8FC]">
+  <div className="max-w-7xl mx-auto px-5 md:px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
+
+    {/* LEFT IMAGE */}
+    <div className="rounded-3xl overflow-hidden shadow-xl group">
+      <img
+        src={streetLightImg} // import your image
+        alt="Solar Street Light"
+        className="w-full h-[260px] sm:h-[320px] md:h-[420px] object-cover transform group-hover:scale-105 transition duration-500"
+      />
+    </div>
+
+    {/* RIGHT CONTENT */}
+    <div>
+
+      <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F33] mb-5 leading-tight">
+        Solar <span className="text-[#84cc16]">Street Lighting</span> Solutions
+      </h2>
+
+      <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6">
+        We provide high-efficiency solar street lighting systems designed for
+        reliable outdoor illumination in urban, rural, and industrial areas.
+        These systems operate independently of the grid, reducing electricity costs
+        and ensuring uninterrupted lighting.
+      </p>
+
+      {/* FEATURES */}
+      <ul className="space-y-3 text-sm md:text-base text-gray-700 mb-6">
+        <li className="flex gap-2">✔ High-efficiency LED lighting</li>
+        <li className="flex gap-2">✔ Integrated battery & solar panel system</li>
+        <li className="flex gap-2">✔ Automatic dusk-to-dawn operation</li>
+        <li className="flex gap-2">✔ Weather-resistant & long-lasting design</li>
+        <li className="flex gap-2">✔ Ideal for roads, campuses & industries</li>
+      </ul>
+
+      {/* HIGHLIGHT BOX */}
+      <div className="bg-white border rounded-xl p-4 shadow-sm">
+        <p className="text-sm md:text-base text-gray-600">
+          💡 <span className="font-semibold text-[#0B1F33]">Best for:</span> 
+          Government projects, highways, villages, factories, and commercial spaces.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
   {/* ================= GROUND SITES (RESPONSIVE) ================= */}
 <section className="bg-[#F7F9FC] py-16 md:py-28 animate-up">
   <div className="max-w-[1128px] mx-auto px-5 md:px-6">
