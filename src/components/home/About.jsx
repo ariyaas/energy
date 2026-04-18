@@ -3,9 +3,11 @@ import manufacturingIcon from "../../assets/icons/manufacturing.svg";
 import engineeringIcon from "../../assets/icons/engineering.svg";
 import serviceIcon from "../../assets/icons/service.svg";
 import { motion } from "framer-motion";
+import { useNavigate } from "react-router-dom";
 
 export default function About() {
 
+  const navigate = useNavigate();
   const container = {
     hidden: {},
     show: {
@@ -133,13 +135,14 @@ export default function About() {
             </motion.div>
 
             {/* BUTTON */}
-            <motion.button
-              variants={fadeUp}
-              whileHover={{ scale: 1.08 }}
-              className="mainBtn mt-8"
-            >
-              View Our Services →
-            </motion.button>
+           <motion.button
+  variants={fadeUp}
+  whileHover={{ scale: 1.08 }}
+  onClick={() => navigate("/services")}
+  className="mainBtn mt-8"
+>
+  View Our Services →
+</motion.button>
 
           </div>
 

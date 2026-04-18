@@ -2,6 +2,7 @@ import capexIcon from "../../assets/icons/capex.svg"
 import opexIcon from "../../assets/icons/opex.svg"
 import solarParkIcon from "../../assets/icons/solar-park.svg"
 import { motion } from "framer-motion"
+import { Link } from "react-router-dom";
 
 export default function SolarModels() {
 
@@ -66,10 +67,12 @@ export default function SolarModels() {
                 </p>
 
                 {/* READ MORE */}
-                <div className="mt-6 flex justify-center items-center gap-2 font-semibold text-[#84cc16] group-hover:text-white transition">
-                  <span>Read More</span>
-                  <span>→</span>
-                </div>
+               <Link to="/services">
+  <div className="mt-6 flex justify-center items-center gap-2 font-semibold text-[#84cc16] group-hover:text-white transition cursor-pointer">
+    <span>Read More</span>
+    <span>→</span>
+  </div>
+</Link>
 
               </div>
             </motion.div>

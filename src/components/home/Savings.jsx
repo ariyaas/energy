@@ -40,9 +40,9 @@ function Savings() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-14">
 
           {[
-            { power:"3 kW", home:"Small Home", units:"~720 units", bill:"₹7,200", total:"~₹10.8 Lakhs" },
-            { power:"5 kW", home:"Medium Home", units:"~1200 units", bill:"₹12,000", total:"~₹18 Lakhs" },
-            { power:"10 kW", home:"Large Home", units:"~2400 units", bill:"₹24,000", total:"~₹36 Lakhs" },
+            { power:"3 kW", home:"Small Home", units:"720 units", bill:"₹7,200", total:"₹10.8 Lakhs" },
+            { power:"5 kW", home:"Medium Home", units:"1200 units", bill:"₹12,000", total:"₹18 Lakhs" },
+            { power:"10 kW", home:"Large Home", units:"2400 units", bill:"₹24,000", total:"₹36 Lakhs" },
           ].map((item,i)=>(
             <motion.div
               key={i}

@@ -571,7 +571,7 @@ const lifetime = yearly * 25;
             <option value="domestic">Domestic (Home)</option>
             <option value="commercial">Commercial (LT)</option>
             <option value="industrial">Industrial (HT)</option>
-            <option value="religious">Religious</option>
+            <option value="religious">Religious(Site)</option>
           </select>
         </div>
 
@@ -711,7 +711,7 @@ const lifetime = yearly * 25;
          <div className="mt-6 bg-gradient-to-r from-green-50 to-green-100 p-4 md:p-5 rounded-xl text-center border border-green-200">
 
   <p className="text-sm md:text-lg font-semibold text-green-700">
-    You Save ₹{(result.savings || 0).toFixed(0)} / month
+    You Save ₹{(result.savings || 0).toFixed(0)} / per EB bill 
   </p>
 
   <p className="text-sm md:text-lg font-semibold text-green-700  mt-2">
@@ -777,7 +777,7 @@ const lifetime = yearly * 25;
 <div className="mt-6 bg-gradient-to-r from-green-50 to-green-100 p-4 md:p-5 rounded-xl text-center border border-green-200">
 
   <p className="text-sm md:text-lg font-semibold text-green-700">
-    You Save ₹{(result.savings || 0).toFixed(0)} / month
+    You Save ₹{(result.savings || 0).toFixed(0)} / per EB bill 
   </p>
 
   <p className="text-sm md:text-lg font-semibold text-green-700 mt-2">
@@ -864,61 +864,83 @@ const lifetime = yearly * 25;
 
     </div>
 
+
+
+
     <div className="mt-10 bg-white rounded-xl shadow-md p-5 md:p-8">
 
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-stretch">
+<div className="grid grid-cols-1 md:grid-cols-5 gap-6 items-center">    {/* LEFT IMAGE (FULL HEIGHT) */}
+   {/* LEFT IMAGE (BIG) */}
+<div className="md:col-span-3 flex items-center justify-center">
+  <img
+    src={solarImg}
+    alt="Solar Investment"
+    className="w-full rounded-xl"
+  />
+</div>
 
-    {/* LEFT IMAGE (FULL HEIGHT) */}
-    <div className="h-full">
-      <img
-        src={solarImg}
-        alt="Solar Investment"
-        className="w-full h-full object-cover rounded-xl"
-      />
-    </div>
+{/* RIGHT CONTENT (SMALLER) */}
+<div className="md:col-span-2 flex flex-col justify-center text-left">
 
-    {/* RIGHT CONTENT */}
-    <div className="flex flex-col justify-center text-center md:text-left">
+  {/* TITLE */}
+  <h2 className="text-2xl md:text-3xl font-extrabold text-[#0B1F33] leading-tight">
+    Smart Investment Comparison
+  </h2>
 
-      <h2 className="text-xl md:text-2xl font-bold text-gray-800">
-        Earn More with Solar
-      </h2>
+  {/* SUBTEXT */}
+  <p className="mt-4 text-base md:text-lg text-gray-600 leading-relaxed">
+    Investing wisely means balancing returns, safety, and long-term value. 
+    Here's how traditional options compare with solar energy.
+  </p>
 
-      <p className="mt-3 text-sm md:text-base text-gray-600">
-        Solar power is not just about saving electricity bills — it is a
-        long-term investment that generates consistent returns.
-      </p>
+  {/* FD */}
+  <div className="mt-6 p-4 rounded-xl border border-gray-200 hover:shadow-md transition">
+    <h3 className="font-semibold text-lg text-[#0B1F33] mb-2">
+      💰 Bank Fixed Deposit (FD)
+    </h3>
+    <ul className="text-gray-600 text-base space-y-1">
+      <li>• 6–7% annual returns</li>
+      <li>• ~25% returns over 5 years</li>
+      <li>• Safe and predictable investment</li>
+    </ul>
+  </div>
 
-      <p className="mt-3 text-sm md:text-base text-gray-600">
-        Compared to traditional options like fixed deposits and gold,
-        solar offers better returns while also reducing your monthly expenses.
-      </p>
+  {/* GOLD */}
+  <div className="mt-4 p-4 rounded-xl border border-gray-200 hover:shadow-md transition">
+    <h3 className="font-semibold text-lg text-[#0B1F33] mb-2">
+      🪙 Gold Investment
+    </h3>
+    <ul className="text-gray-600 text-base space-y-1">
+      <li>• Up to ~50% returns in 5 years</li>
+      <li>• Prices fluctuate with market trends</li>
+      <li>• Highly liquid asset</li>
+    </ul>
+  </div>
 
-      <p className="mt-3 text-sm md:text-base text-gray-600">
-        With rising electricity costs, installing solar today ensures
-        stable savings and financial benefits for the next 25 years.
-      </p>
+  {/* SOLAR (HIGHLIGHT) */}
+  <div className="mt-4 p-5 rounded-xl bg-green-50 border border-green-200 shadow-sm">
+    <h3 className="font-semibold text-lg text-[#67ab19] mb-2">
+      ☀️ Solar Installation
+    </h3>
+    <ul className="text-gray-700 text-base space-y-1">
+      <li>• Save 60–80% on electricity bills</li>
+      <li>• Up to ~70% returns in 5 years</li>
+      <li>• Payback in 4–6 years</li>
+      <li>• Long-term profit for 20+ years</li>
+    </ul>
+  </div>
 
-      {/* HIGHLIGHT POINTS */}
-      <div className="mt-4 space-y-2 text-sm md:text-base text-gray-700">
+  {/* CTA */}
+  <p className="mt-6 text-[#67ab19] font-semibold text-lg">
+    Switch to solar and turn your energy costs into long-term savings.
+  </p>
 
-        <p>✔ Save electricity bills every month</p>
-        <p>✔ Earn returns through solar generation</p>
-        <p>✔ Protection from future tariff increases</p>
-        <p>✔ Eco-friendly and sustainable energy</p>
-
-      </div>
-
-      {/* CTA LINE */}
-      <p className="mt-5 text-[#67ab19] font-semibold text-base md:text-lg">
-        Start saving and earning with solar today.
-      </p>
-
-    </div>
+</div>
 
   </div>
 
 </div>
+    
     
     </div>
 
