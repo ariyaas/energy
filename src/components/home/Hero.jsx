@@ -66,6 +66,9 @@ export default function Hero({ onQuoteClick }) {
     alt="Evoke Energy"
     className="h-10 sm:h-12 md:h-14 lg:h-16 w-auto object-contain"
   />
+<p className="text-[10px] sm:text-xs md:text-sm text-white/80 tracking-[0.2em] uppercase text-center mt-1 font-semibold">
+  Partner
+</p>
 </div>
 
       {/* BACKGROUND IMAGE SLIDER */}
