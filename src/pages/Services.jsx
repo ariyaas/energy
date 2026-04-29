@@ -24,10 +24,10 @@ export default function Services({ onQuoteClick }) {
       {/* ================= HERO TEXT ================= */}
     <section className="py-16 md:py-20 bg-white text-center animate-up px-4">
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1F33] leading-tight">
-    Our <span className="text-[#84cc16]">Services</span>
+    Our <span className="text-brandPrimary">Services</span>
   </h1>
 
-  <div className="w-20 md:w-24 h-[3px] md:h-1 bg-[#FFC107] mx-auto mt-4 md:mt-5 mb-5 md:mb-6" />
+  <div className="w-20 md:w-24 h-[3px] md:h-1 bg-brandPrimary mx-auto mt-4 md:mt-5 mb-5 md:mb-6" />
 
   <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg px-2">
     Manufacturing, EPC & O&M — delivering end-to-end solar solutions
@@ -42,8 +42,8 @@ export default function Services({ onQuoteClick }) {
     {/* EPC */}
     <div className="group bg-white rounded-3xl border border-[#EAF4FF] p-6 md:p-10 animate-up
     hover:-translate-y-3 hover:shadow-2xl transition duration-500">
-      <div className="w-12 h-12 md:w-14 md:h-14 bg-[#ECFDF5] text-[#84cc16] rounded-xl flex items-center justify-center mb-5 md:mb-6
-        group-hover:bg-[#84cc16] group-hover:text-white transition">
+      <div className="w-12 h-12 md:w-14 md:h-14 bg-[#ECFDF5] text-brandPrimary rounded-xl flex items-center justify-center mb-5 md:mb-6
+        group-hover:bg-brandPrimary group-hover:text-white transition">
         <FaTools size={24} />
       </div>
 
@@ -60,8 +60,8 @@ export default function Services({ onQuoteClick }) {
     {/* O&M */}
     <div className="group bg-white rounded-3xl border border-[#EAF4FF] p-6 md:p-10 animate-up delay-1
     hover:-translate-y-3 hover:shadow-2xl transition duration-500">
-      <div className="w-12 h-12 md:w-14 md:h-14 bg-[#ECFDF5] text-[#84cc16] rounded-xl flex items-center justify-center mb-5 md:mb-6
-        group-hover:bg-[#84cc16] group-hover:text-white transition">
+      <div className="w-12 h-12 md:w-14 md:h-14 bg-[#ECFDF5] text-brandPrimary rounded-xl flex items-center justify-center mb-5 md:mb-6
+        group-hover:bg-brandPrimary group-hover:text-white transition">
         <FaCogs size={24} />
       </div>
 
@@ -78,8 +78,8 @@ export default function Services({ onQuoteClick }) {
     {/* Manufacturing */}
     <div className="group bg-white rounded-3xl border border-[#EAF4FF] p-6 md:p-10 animate-up delay-2
     hover:-translate-y-3 hover:shadow-2xl transition duration-500">
-      <div className="w-12 h-12 md:w-14 md:h-14 bg-[#ECFDF5] text-[#84cc16] rounded-xl flex items-center justify-center mb-5 md:mb-6
-        group-hover:bg-[#84cc16] group-hover:text-white transition">
+      <div className="w-12 h-12 md:w-14 md:h-14 bg-[#ECFDF5] text-brandPrimary rounded-xl flex items-center justify-center mb-5 md:mb-6
+        group-hover:bg-brandPrimary group-hover:text-white transition">
         <FaIndustry size={24} />
       </div>
 
@@ -88,9 +88,9 @@ export default function Services({ onQuoteClick }) {
       </h3>
 
       <ul className="space-y-2 text-gray-600 text-sm md:text-base">
-        <li className="flex gap-2"><FaCheckCircle className="text-[#FFC107]" /> Solar Inverters</li>
-        <li className="flex gap-2"><FaCheckCircle className="text-[#FFC107]" /> PV Modules</li>
-        <li className="flex gap-2"><FaCheckCircle className="text-[#FFC107]" /> Mounting Structures</li>
+        <li className="flex gap-2"><FaCheckCircle className="text-brandPrimary" /> Solar Inverters</li>
+        <li className="flex gap-2"><FaCheckCircle className="text-brandPrimary" /> PV Modules</li>
+        <li className="flex gap-2"><FaCheckCircle className="text-brandPrimary" /> Mounting Structures</li>
       </ul>
     </div>
 
@@ -103,7 +103,7 @@ export default function Services({ onQuoteClick }) {
 
     <div>
       <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-6 leading-tight">
-        True One-Call <span className="text-[#FFC107]">Solar Solution</span>
+        True One-Call <span className="text-brandPrimary">Solar Solution</span>
       </h2>
 
       <ul className="space-y-3 md:space-y-4 text-blue-100 text-sm md:text-base">
@@ -115,7 +115,7 @@ export default function Services({ onQuoteClick }) {
           "24×7 technical support",
         ].map((item, i) => (
           <li key={i} className="flex gap-3">
-            <FaCheckCircle className="text-[#FFC107]" /> {item}
+            <FaCheckCircle className="text-brandPrimary" /> {item}
           </li>
         ))}
       </ul>
@@ -156,7 +156,7 @@ export default function Services({ onQuoteClick }) {
 
       {/* TITLE */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B1F33] mb-4 md:mb-6 leading-tight">
-        Off-Grid Solar <span className="text-[#84cc16]">Container Homes</span>
+        Off-Grid Solar <span className="text-brandPrimary">Container Homes</span>
       </h2>
 
       {/* INTRO */}
@@ -192,7 +192,7 @@ export default function Services({ onQuoteClick }) {
       </div>
 
       {/* HIGHLIGHT */}
-      <div className="mt-6 bg-[#F0FDF4] border-l-4 border-[#84cc16] p-4 rounded-lg">
+      <div className="mt-6 bg-[#F0FDF4] border-l-4 border-brandPrimary p-4 rounded-lg">
         <p className="text-sm md:text-base text-gray-700">
           💡 <span className="font-semibold">Perfect for:</span> 
           Hill stations, resorts, farmhouses, tourism projects, and rural areas without electricity.
@@ -212,7 +212,7 @@ export default function Services({ onQuoteClick }) {
     <div className="animate-up">
 
       <h2 className="text-2xl sm:text-3xl md:text-5xl font-extrabold text-[#0B1F33] mb-4 md:mb-6 leading-tight">
-        Remote Solar <span className="text-[#84cc16]">Monitoring</span>
+        Remote Solar <span className="text-brandPrimary">Monitoring</span>
       </h2>
 
       <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed mb-4 md:mb-6">
@@ -280,8 +280,6 @@ export default function Services({ onQuoteClick }) {
 </section>
 
 
-
-
 <section className="py-20 md:py-28 bg-white">
   <div className="max-w-7xl mx-auto px-5 md:px-6 grid md:grid-cols-2 gap-12 items-center">
 
@@ -290,78 +288,86 @@ export default function Services({ onQuoteClick }) {
 
       {/* TITLE */}
       <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B1F33] mb-6 leading-tight">
-        Solar + EV Charging Solution
+        Solar + <span className="text-brandPrimary">EV Charging</span> Solution
       </h2>
 
       {/* INTRO */}
       <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-        Integrating a <span className="font-semibold text-[#84cc16]">10 kW Solar System</span> with an EV is one of the smartest financial moves for a homeowner in 2026. 
-        Given your professional focus on solar energy and logistics, you'll appreciate the high ROI and efficiency of this setup.
+        Integrating a <span className="font-semibold text-brandPrimary">10 kW Solar System</span> with an EV is one of the smartest financial moves for homeowners. 
+        It significantly reduces running costs while delivering long-term energy independence.
       </p>
 
       <p className="text-base md:text-lg text-gray-700 mb-6">
-        Here is the breakdown of the savings and technical requirements for your 10 kW system.
+        Below is a realistic comparison based on industry data and real-world usage.
       </p>
 
       {/* SECTION 1 */}
       <h3 className="text-xl md:text-2xl font-bold text-[#0B1F33] mb-3">
-        1. Financial Impact: Savings per KM
+        1. Financial Impact: Cost per KM
       </h3>
 
       <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-6">
-        In India, the cost of running a petrol car in 2026 is roughly ₹6.5 – ₹7.5 per km, 
-        while a grid-charged EV costs about ₹1.2 – ₹1.5 per km. By using your own solar power, 
-        that cost drops to nearly zero.
+        Petrol vehicles are significantly more expensive to run compared to EVs. 
+        When powered by solar, EV running costs drop by up to 
+        <span className="font-semibold text-brandPrimary"> 80–90%.</span>
       </p>
 
       {/* TABLE */}
       <div className="overflow-x-auto mb-6">
-        <table className="w-full text-sm md:text-base border rounded-xl overflow-hidden">
-          <thead className="bg-[#84cc16] text-white">
+        <table className="w-full text-sm md:text-base border rounded-xl overflow-hidden shadow-sm">
+          <thead className="bg-brandPrimary text-white">
             <tr>
               <th className="p-3 text-left">Fuel Source</th>
               <th className="p-3 text-center">Cost / KM</th>
               <th className="p-3 text-center">Monthly (1000 km)</th>
-              <th className="p-3 text-center">Annual Savings</th>
+              <th className="p-3 text-center">Savings vs Petrol</th>
             </tr>
           </thead>
+
           <tbody className="text-gray-700 bg-white">
             <tr className="border-b">
-              <td className="p-3">Petrol</td>
-              <td className="text-center">₹7.00</td>
+              <td className="p-3 font-medium">Petrol</td>
+              <td className="text-center">₹7.0</td>
               <td className="text-center">₹7,000</td>
               <td className="text-center">—</td>
             </tr>
+
             <tr className="border-b">
-              <td className="p-3">Grid Electricity</td>
-              <td className="text-center">₹1.20</td>
-              <td className="text-center">₹1,200</td>
-              <td className="text-center text-green-600 font-semibold">₹69,600</td>
+              <td className="p-3 font-medium">Grid EV</td>
+              <td className="text-center">₹1.5 – ₹2.0</td>
+              <td className="text-center">₹1,500 – ₹2,000</td>
+              <td className="text-center text-brandPrimary font-semibold">
+                ₹60,000 – ₹66,000 / year
+              </td>
             </tr>
+
             <tr>
-              <td className="p-3">Solar (Self-Gen)</td>
-              <td className="text-center">₹0.00*</td>
-              <td className="text-center">₹0</td>
-              <td className="text-center">—</td>
+              <td className="p-3 font-medium">Solar EV</td>
+              <td className="text-center">₹0.8 – ₹1.2*</td>
+              <td className="text-center">₹800 – ₹1,200</td>
+              <td className="text-center text-brandPrimary font-semibold">
+                ₹70,000+ / year
+              </td>
             </tr>
           </tbody>
         </table>
       </div>
 
       {/* NOTE */}
-      <p className="text-sm text-gray-500 mb-8">
-        Note: While there is an upfront installation cost, the "fuel" becomes free after the 3–4 year payback period.
-      </p>
+      <div className="bg-brandPrimary/10 border border-brandPrimary/20 rounded-lg p-4 text-sm text-gray-600 mb-8">
+        *Costs are based on average EV efficiency (0.15–0.18 kWh/km), electricity tariffs, and system performance.  
+        After the 3–4 year payback period, solar energy reduces charging cost to near-zero marginal cost.
+      </div>
 
       {/* SECTION 2 */}
       <h3 className="text-xl md:text-2xl font-bold text-[#0B1F33] mb-3">
-        2. Technical Capacity: 10 kW Solar System
+        2. System Capacity: 10 kW Solar
       </h3>
 
       <p className="text-base md:text-lg text-gray-700 leading-relaxed">
-        A 10 kW system is robust and typically generates 
-        <span className="font-semibold"> 40–50 units (kWh) per day </span> 
-        in Tamil Nadu’s sunny climate.
+        A <span className="font-semibold">10 kW solar system</span> typically generates 
+        <span className="font-semibold text-brandPrimary"> 40–50 kWh per day </span> 
+        in Tamil Nadu, enough to support daily EV charging along with household usage.
       </p>
 
     </div>
@@ -389,7 +395,7 @@ export default function Services({ onQuoteClick }) {
 
     {/* TITLE */}
     <div className="text-center mb-12">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B1F33] mb-4">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-brandPrimary mb-4">
         Solar System Types
       </h2>
       <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg">
@@ -484,7 +490,7 @@ export default function Services({ onQuoteClick }) {
       </h3>
 
       <table className="w-full text-sm border rounded-xl overflow-hidden">
-        <thead className="bg-[#84cc16] text-white">
+        <thead className="bg-brandPrimary text-white">
           <tr>
             <th className="p-3">Feature</th>
             <th className="p-3">Residential</th>
@@ -522,7 +528,7 @@ export default function Services({ onQuoteClick }) {
     </div>
 
     {/* TIP */}
-    <div className="mt-10 bg-[#F0FDF4] border-l-4 border-[#84cc16] p-6 rounded-xl">
+    <div className="mt-10 bg-[#F0FDF4] border-l-4 border-brandPrimary p-6 rounded-xl">
       <p className="text-sm md:text-base text-gray-700">
         💡 <span className="font-semibold">Tip:</span> 
         If your goal is ROI, choose <b>On-Grid</b>. 
@@ -551,7 +557,7 @@ export default function Services({ onQuoteClick }) {
     <div>
 
       <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F33] mb-5 leading-tight">
-        Solar <span className="text-[#84cc16]">Street Lighting</span> Solutions
+        Solar <span className="text-brandPrimary">Street Lighting</span> Solutions
       </h2>
 
       <p className="text-gray-700 text-sm md:text-base leading-relaxed mb-6">
@@ -591,10 +597,10 @@ export default function Services({ onQuoteClick }) {
     {/* HEADER */}
     <div className="text-center mb-10 md:mb-16">
       <h2 className="text-2xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1F33] leading-tight">
-        Ready-to-Use Solar <span className="text-[#84cc16]">Ground Sites</span>
+        Ready-to-Use Solar <span className="text-brandPrimary">Ground Sites</span>
       </h2>
 
-      <div className="mt-3 md:mt-4 h-[3px] md:h-[4px] w-[160px] md:w-[260px] bg-[#FFC107] mx-auto" />
+      <div className="mt-3 md:mt-4 h-[3px] md:h-[4px] w-[160px] md:w-[260px] bg-brandPrimary mx-auto" />
 
       <p className="mt-4 text-sm md:text-lg text-gray-600 px-2">
         End-to-end support for utility-scale projects
@@ -618,7 +624,7 @@ export default function Services({ onQuoteClick }) {
             ["Financing options","Flexible payment and funding solutions"],
           ].map((item,i)=>(
             <li key={i} className="flex gap-3 md:gap-4">
-              <div className="text-[#84cc16] text-lg md:text-2xl mt-1">✔</div>
+              <div className="text-brandPrimary text-lg md:text-2xl mt-1">✔</div>
               <div>
                 <p className="font-semibold text-[#0B1F33] text-sm md:text-base">{item[0]}</p>
                 <p className="text-gray-600 text-sm md:text-base">{item[1]}</p>
@@ -664,12 +670,14 @@ export default function Services({ onQuoteClick }) {
     Free ROI & IRR evaluation available
   </p>
 
-  <button
-    onClick={onQuoteClick}
-    className="bg-[#84cc16] text-white font-bold px-8 md:px-12 py-3 md:py-4 rounded-xl
-    hover:bg-[#65a30d] hover:scale-105 transition">
-    Get a Free Quote
-  </button>
+ <button
+  onClick={onQuoteClick}
+  className="bg-brandPrimary text-white font-semibold px-8 md:px-12 py-3 md:py-4 rounded-xl
+  hover:bg-blue-800 hover:scale-105 transition duration-300 
+  shadow-lg hover:shadow-xl"
+>
+  Get a Free Quote →
+</button>
 </section>
     </>
   );

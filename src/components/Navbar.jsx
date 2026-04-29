@@ -5,24 +5,7 @@ import logo from "../assets/logo.svg"
 
 export default function Navbar({ openQuote }) {
   const [open, setOpen] = useState(false)
-//  const [showNav, setShowNav] = useState(true)
-// const [lastScrollY, setLastScrollY] = useState(0)
 
-// useEffect(() => {
-//   const controlNavbar = () => {
-//     if (window.scrollY > lastScrollY) {
-//       // scrolling down
-//       setShowNav(false)
-//     } else {
-//       // scrolling up
-//       setShowNav(true)
-//     }
-//     setLastScrollY(window.scrollY)
-//   }
-
-//   window.addEventListener("scroll", controlNavbar)
-//   return () => window.removeEventListener("scroll", controlNavbar)
-// }, [lastScrollY])
 
 
   return (
@@ -48,15 +31,16 @@ export default function Navbar({ openQuote }) {
   <Link to="/contact" className="navLink">Contact</Link>
 </nav>
   <div className="justify-self-end hidden lg:block">
-  <button onClick={openQuote} className="group flex items-center bg-[#a3d51c] rounded-full pl-7 pr-2 py-2 font-semibold text-black hover:scale-105 transition">
+  <button
+    onClick={openQuote}
+    className="group flex items-center bg-brandPrimary hover:bg-blue-700 rounded-full pl-7 pr-2 py-2 font-semibold text-white hover:scale-105 transition"
+  >
+    <span className="mr-4">Get In Touch</span>
 
-  <span className="mr-4">Get In Touch</span>
-
-  <span className="w-10 h-10 bg-black text-white rounded-full flex items-center justify-center text-lg group-hover:rotate-45 transition">
-    ↗
-  </span>
-
-</button>
+    <span className="w-10 h-10 bg-white text-brandPrimary rounded-full flex items-center justify-center text-lg group-hover:rotate-45 transition">
+      ↗
+    </span>
+  </button>
 </div>
 
 

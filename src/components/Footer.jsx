@@ -1,4 +1,4 @@
-import footerBg from "../assets/solar-farm.webp" // any solar image
+import footerBg from "../assets/solar-farm.webp"
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa"
 
 export default function Footer() {
@@ -9,7 +9,7 @@ export default function Footer() {
       <div className="absolute inset-0 -z-10">
         <img src={footerBg} className="w-full h-full object-cover" />
 
-        {/* DARK GRADIENT OVERLAY */}
+        {/* DARK OVERLAY */}
         <div className="absolute inset-0 bg-gradient-to-b from-black/90 via-black/85 to-black/95" />
       </div>
 
@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* ABOUT */}
           <div>
-            <h3 className="text-3xl font-bold mb-5">Seapol</h3>
+            <h3 className="text-3xl font-bold mb-5  text-brandPrimary">Seapol  Energy</h3>
 
             <p className="text-gray-300 leading-relaxed mb-6">
               Solar energy is renewable and inexhaustible, making it a sustainable
@@ -33,7 +33,7 @@ export default function Footer() {
               {[FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn].map((Icon,i)=>(
                 <div key={i}
                   className="w-10 h-10 rounded-full border border-white/30 flex items-center justify-center
-                             hover:bg-[#84cc16] hover:border-[#84cc16] transition cursor-pointer">
+                             hover:bg-brandPrimary hover:border-brandPrimary transition cursor-pointer">
                   <Icon size={16}/>
                 </div>
               ))}
@@ -44,11 +44,11 @@ export default function Footer() {
           <div>
             <h4 className="footerTitle">Company</h4>
             <ul className="footerLinks">
-              <li>Home</li>
-              <li>About Us</li>
-              <li>Our Services</li>
-              <li>Latest Blog</li>
-              <li>Meet Our Team</li>
+              <li className="hover:text-brandPrimary">Home</li>
+              <li className="hover:text-brandPrimary">About Us</li>
+              <li className="hover:text-brandPrimary">Our Services</li>
+              <li className="hover:text-brandPrimary">Latest Blog</li>
+              <li className="hover:text-brandPrimary">Meet Our Team</li>
             </ul>
           </div>
 
@@ -56,10 +56,10 @@ export default function Footer() {
           <div>
             <h4 className="footerTitle">Quick Links</h4>
             <ul className="footerLinks">
-              <li>Projects</li>
-              <li>Solar Energy</li>
-              <li>Testimonials</li>
-              <li>Contact Us</li>
+              <li className="hover:text-brandPrimary">Projects</li>
+              <li className="hover:text-brandPrimary">Solar Energy</li>
+              <li className="hover:text-brandPrimary">Testimonials</li>
+              <li className="hover:text-brandPrimary">Contact Us</li>
             </ul>
           </div>
 
@@ -77,12 +77,12 @@ export default function Footer() {
 
         {/* BOTTOM BAR */}
         <div className="border-t border-white/20 mt-16 pt-6 flex flex-col md:flex-row justify-between text-gray-400 text-sm">
-          <p>© 2025 Seapol. All Rights Reserved.</p>
+          <p>© 2025 Seapol Energy. All Rights Reserved.</p>
 
           <div className="flex gap-6 mt-3 md:mt-0">
-            <span className="hover:text-[#84cc16] cursor-pointer">Privacy Policy</span>
-            <span className="hover:text-[#84cc16] cursor-pointer">Terms</span>
-            <span className="hover:text-[#84cc16] cursor-pointer">Cookies</span>
+            <span className="hover:text-brandPrimary cursor-pointer transition">Privacy Policy</span>
+            <span className="hover:text-brandPrimary cursor-pointer transition">Terms</span>
+            <span className="hover:text-brandPrimary cursor-pointer transition">Cookies</span>
           </div>
         </div>
 

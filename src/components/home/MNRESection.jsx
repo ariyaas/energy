@@ -8,7 +8,7 @@ export default function MNRESection() {
 
           {/* TOP BADGE */}
           <div className="flex justify-center mb-4">
-            <span className="bg-green-100 text-green-700 text-xs md:text-sm font-semibold px-4 py-1 rounded-full">
+            <span className="bg-brandPrimary text-white text-xs md:text-sm font-semibold px-4 py-1 rounded-full">
                MNRE Approved Solar Provider
             </span>
           </div>

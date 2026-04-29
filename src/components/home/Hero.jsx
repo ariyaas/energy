@@ -111,28 +111,30 @@ text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[76px]">
 
 
           {/* BUTTONS */}
-          <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+         <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
 
-       <button
-  onClick={onQuoteClick}
-  className="mainBtn text-black sm:text-lg px-6 sm:px-8 py-3 sm:py-4"
->
-  Get Free Quote →
-</button>
+  {/* PRIMARY BUTTON */}
+  <button
+    onClick={onQuoteClick}
+    className="bg-brandPrimary hover:bg-blue-700 text-white sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold transition hover:scale-105"
+  >
+    Get Free Quote →
+  </button>
 
-          <button
-  onClick={() =>
-    window.open(
-      "https://wa.me/918111040090?text=Hello%20I%20am%20interested%20in%20solar%20solutions",
-      "_blank"
-    )
-  }
-  className="hidden sm:inline-block border border-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-white hover:text-black transition"
->
-  Talk to Experts
-</button>
+  {/* SECONDARY BUTTON */}
+  <button
+    onClick={() =>
+      window.open(
+        "https://wa.me/918111040090?text=Hello%20I%20am%20interested%20in%20solar%20solutions",
+        "_blank"
+      )
+    }
+    className="hidden sm:inline-block border border-brandPrimary text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brandPrimary hover:text-white transition"
+  >
+    Talk to Experts
+  </button>
 
-          </div>
+</div>
         </div>
       </div>
     </section>

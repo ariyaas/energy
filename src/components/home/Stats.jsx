@@ -2,8 +2,8 @@ import { useEffect, useRef, useState } from "react";
 
 export default function Stats() {
   const stats = [
-    { value: 30, suffix: "+", label: "Years of Experience" },
-    { value: 200, suffix: "+", label: "MW Installed" },
+    { value: 10, suffix: "+", label: "Years of Experience" },
+    { value: 25, suffix: "+", label: "MW Installed" },
     { value: 1500, suffix: "+", label: "MW Supplied" },
     { value: 500, suffix: "+", label: "Projects Delivered" },
   ];
@@ -68,7 +68,7 @@ export default function Stats() {
                   border border-gray-100
                   transition-all duration-500
                   hover:-translate-y-2 hover:shadow-2xl
-                  hover:bg-gradient-to-b hover:from-[#84cc16] hover:to-[#6fb300]
+                 hover:bg-brandPrimary
                 "
               >
                 {/* NUMBER */}

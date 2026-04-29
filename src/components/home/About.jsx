@@ -42,7 +42,7 @@ export default function About() {
           variants={fadeUp}
           className="text-center mb-14 md:mb-20"
         >
-          <p className="text-[#84cc16] font-semibold mb-3 tracking-wider">
+          <p className="text-brandPrimary font-semibold mb-3 tracking-wider">
             ABOUT COMPANY
           </p>
 
@@ -135,11 +135,11 @@ export default function About() {
             </motion.div>
 
             {/* BUTTON */}
-           <motion.button
+          <motion.button
   variants={fadeUp}
   whileHover={{ scale: 1.08 }}
   onClick={() => navigate("/services")}
-  className="mainBtn mt-8"
+  className="mt-8 bg-brandPrimary hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition"
 >
   View Our Services →
 </motion.button>

@@ -17,9 +17,9 @@ export default function Projects({ onQuoteClick }) {
       {/* HERO */}
 <section className="bg-white py-14 md:py-20 text-center px-4">
   <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-[#0B1F33] leading-tight">
-          Solar Projects Across <span className="text-[#84CC16]">India</span>
+          Solar Projects Across <span className="text-brandPrimary">India</span>
         </h1>
-        <div className="w-24 h-1 bg-[#84CC16] mx-auto mt-5 mb-6" />
+        <div className="w-24 h-1 bg-brandPrimary mx-auto mt-5 mb-6" />
         <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg px-2">
           Delivering reliable, scalable and high-performance solar installations
           across residential, commercial, industrial and utility sectors.
@@ -36,7 +36,7 @@ export default function Projects({ onQuoteClick }) {
             ["10+", "States Covered"],
           ].map((item, i) => (
             <div key={i}>
-              <h3 className="text-4xl font-bold text-[#84CC16]">{item[0]}</h3>
+              <h3 className="text-4xl font-bold text-brandPrimary">{item[0]}</h3>
               <p className="mt-2 text-white/80">{item[1]}</p>
             </div>
           ))}
@@ -69,7 +69,7 @@ export default function Projects({ onQuoteClick }) {
         >
 
           <div className="w-14 h-14 md:w-16 md:h-16 mx-auto mb-4 md:mb-5 rounded-xl
-          bg-[#ECFDF5] text-[#84CC16] flex items-center justify-center text-xl md:text-2xl">
+          bg-[#ECFDF5] text-brandPrimary flex items-center justify-center text-xl md:text-2xl">
             {item.icon}
           </div>
 
@@ -85,41 +85,70 @@ export default function Projects({ onQuoteClick }) {
 </section>
 
       {/* FEATURED PROJECTS */}
-   <section className="bg-white py-16 md:py-24">
-        <div className="max-w-7xl mx-auto px-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F33] text-center mb-16">
-            Featured Projects
-          </h2>
+  <section className="bg-white py-16 md:py-24">
+  <div className="max-w-7xl mx-auto px-6">
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10 p-6 md:p-10">
-            {[
-              { name:"Commercial Rooftop – Chennai", capacity:"500 kW", type:"Commercial" },
-              { name:"Industrial Plant – Bangalore", capacity:"2 MW", type:"Industrial" },
-              { name:"Utility Solar Park – Tamil Nadu", capacity:"50 MW", type:"Utility Scale" },
-            ].map((p, i) => (
-              <div key={i}
-                className="border rounded-2xl p-10 hover:shadow-xl transition">
+    {/* TITLE */}
+    <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F33] text-center mb-16">
+      Featured Projects
+    </h2>
 
-                <h3 className="font-bold text-xl text-[#0B1F33]">{p.name}</h3>
-                <p className="text-gray-600 mt-3">
-                  Capacity: <strong>{p.capacity}</strong>
-                </p>
-                <p className="text-gray-600">Project Type: {p.type}</p>
+    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
 
-                <button className="mt-6 text-[#84CC16] font-semibold">
-                  View Project →
-                </button>
-              </div>
-            ))}
-          </div>
+      {[
+        { name:"Commercial Rooftop – Chennai", capacity:"500 kW", type:"Commercial" },
+        { name:"Industrial Plant – Bangalore", capacity:"2 MW", type:"Industrial" },
+        { name:"Utility Solar Park – Tamil Nadu", capacity:"50 MW", type:"Utility Scale" },
+      ].map((p, i) => (
+
+        <div
+          key={i}
+          className="
+            group border border-gray-200 rounded-2xl p-8 
+            transition-all duration-300 
+            hover:shadow-2xl hover:-translate-y-2 hover:border-brandPrimary
+          "
+        >
+
+          {/* TITLE */}
+          <h3 className="font-bold text-xl text-[#0B1F33] mb-2">
+            {p.name}
+          </h3>
+
+          {/* DETAILS */}
+          <p className="text-gray-600">
+            Capacity: <strong>{p.capacity}</strong>
+          </p>
+
+          <p className="text-gray-600 mb-5">
+            Project Type: {p.type}
+          </p>
+
+          {/* BUTTON */}
+          <button className="
+            text-brandPrimary font-semibold 
+            flex items-center gap-2
+            group-hover:gap-3 transition-all
+          ">
+            View Project →
+          </button>
+
+          {/* UNDERLINE ANIMATION */}
+          <div className="h-[2px] w-0 bg-brandPrimary mt-2 group-hover:w-full transition-all duration-300"></div>
+
         </div>
-      </section>
+
+      ))}
+
+    </div>
+  </div>
+</section>
 
       {/* WHY PROJECTS SUCCEED */}
       <section className="py-16 md:py-24 bg-[#0B1F33] text-white">
         <div className="max-w-7xl mx-auto px-6 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-10">
-            Why Our Projects <span className="text-[#84CC16]">Succeed</span>
+            Why Our Projects <span className="text-brandPrimary">Succeed</span>
           </h2>
 
 <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">   
@@ -130,7 +159,7 @@ export default function Projects({ onQuoteClick }) {
               "Long-Term Performance",
             ].map((text, i) => (
               <div key={i} className="bg-white/10 backdrop-blur p-8 rounded-2xl">
-                <FaCheckCircle className="text-[#84CC16] text-2xl mx-auto mb-3"/>
+                <FaCheckCircle className="text-brandPrimary text-2xl mx-auto mb-3"/>
                 <p className="font-semibold">{text}</p>
               </div>
             ))}

@@ -23,11 +23,9 @@ export default function PremiumComparison() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-10">
 
           {/* OUR COMPANY */}
-          <div className="rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 
-            bg-gradient-to-br from-[#84cc16] via-[#65a30d] to-[#4d7c0f] 
-            text-white shadow-xl md:shadow-2xl 
-            hover:scale-[1.02] transition duration-500">
-
+         <div className="rounded-2xl md:rounded-3xl p-5 sm:p-6 md:p-8 
+  bg-brandPrimary text-white shadow-xl md:shadow-2xl 
+  hover:scale-[1.02] transition duration-500">
             <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 md:mb-6">
               Our Company
             </h3>

@@ -30,7 +30,7 @@ export default function SolarModels() {
 
         {/* Title */}
         <div className="text-center mb-16">
-          <p className="text-[#84cc16] font-semibold mb-3">OUR SOLAR MODELS</p>
+          <p className="text-brandPrimary font-semibold mb-3">OUR SOLAR MODELS</p>
           <h2 className="text-3xl md:text-5xl font-extrabold text-[#0B1F33]">
             Flexible Solar Investment Options
           </h2>
@@ -47,7 +47,7 @@ export default function SolarModels() {
             >
 
               {/* GREEN HOVER BACKGROUND */}
-              <div className="absolute inset-0 bg-[#84cc16] translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
+              <div className="absolute inset-0 bg-brandPrimary translate-y-full group-hover:translate-y-0 transition-transform duration-500"></div>
 
               {/* CONTENT */}
               <div className="relative z-10 text-center">
@@ -68,7 +68,7 @@ export default function SolarModels() {
 
                 {/* READ MORE */}
                <Link to="/services">
-  <div className="mt-6 flex justify-center items-center gap-2 font-semibold text-[#84cc16] group-hover:text-white transition cursor-pointer">
+  <div className="mt-6 flex justify-center items-center gap-2 font-semibold text-brandPrimary group-hover:text-white transition cursor-pointer">
     <span>Read More</span>
     <span>→</span>
   </div>

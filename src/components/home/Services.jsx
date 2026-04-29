@@ -39,7 +39,7 @@ function Services() {
             Our Services
           </h2>
 
-          <div className="mt-3 h-[3px] w-24 sm:w-28 bg-[#84cc16] mx-auto rounded-full" />
+          <div className="mt-3 h-[3px] w-24 sm:w-28 bg-brandPrimary mx-auto rounded-full" />
 
           <p className="mt-4 text-sm sm:text-base md:text-lg text-white/80 max-w-xl mx-auto">
             Manufacturing, EPC & O&M — All Under One Roof
@@ -108,7 +108,7 @@ function Services() {
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: .6 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-[#65a30d] to-[#84cc16] rounded-2xl sm:rounded-3xl px-6 sm:px-10 md:px-16 py-8 sm:py-10 text-white"
+          className="bg-brandPrimary rounded-2xl sm:rounded-3xl px-6 sm:px-10 md:px-16 py-8 sm:py-10 text-white"
         >
           <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-center mb-8">
             True One-Call Solar Solution

@@ -21,7 +21,7 @@ export default function About({ onQuoteClick }) {
   <div className="max-w-7xl mx-auto px-5 md:px-6 text-center">
 
     <h2 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-[#0B1F33] mb-4 md:mb-6 animate-slide-right leading-tight">
-      About <span className="text-[#84cc16]">Seapol Energy</span>
+      About <span className="text-brandPrimary">Seapol Energy</span>
     </h2>
 
     <p className="text-gray-600 max-w-3xl mx-auto text-base md:text-lg leading-relaxed animate-fade-in px-2">
@@ -52,7 +52,7 @@ export default function About({ onQuoteClick }) {
       {/* TEXT */}
       <div className="max-w-xl">
 
-        <p className="text-[#84cc16] font-semibold mb-2 text-sm uppercase tracking-wide">
+        <p className="text-brandPrimary font-semibold mb-2 text-sm uppercase tracking-wide">
           From the Desk of CEO & CTO
         </p>
 
@@ -141,7 +141,7 @@ export default function About({ onQuoteClick }) {
 <section className="bg-[#F7F9FC] py-24">
   <div className="max-w-7xl mx-auto px-6 text-center mb-16">
     <h2 className="text-4xl font-bold text-[#0B1F33]">
-      Our <span className="text-[#84cc16]">Expertise</span>
+      Our <span className="text-brandPrimary">Expertise</span>
     </h2>
   </div>
 
@@ -158,7 +158,7 @@ export default function About({ onQuoteClick }) {
         hover:-translate-y-3 hover:shadow-2xl transition duration-500">
 
         <div className="w-16 h-16 mx-auto mb-4 rounded-xl bg-[#ECFDF5]
-                        flex items-center justify-center text-[#84cc16] text-3xl animate-pulse">
+                        flex items-center justify-center text-brandPrimary text-3xl animate-pulse">
           {item.icon}
         </div>
 

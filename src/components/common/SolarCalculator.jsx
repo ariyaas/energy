@@ -534,12 +534,12 @@ const lifetime = yearly * 25;
 <div className="text-center mb-8">
 
   <h2 className="text-2xl md:text-3xl font-bold leading-tight">
-  Solar Savings <span className="text-[#67ab19]">Calculator</span>
+  Solar Savings <span className="text-brandPrimary">Calculator</span>
 </h2>
 
 <h1 className="text-lg md:text-xl font-semibold mt-2">
   <span className="text-gray-800">Powered by </span>
-  <span className="text-[#67ab19]">Seapol Energy</span>
+  <span className="text-brandPrimary">Seapol Energy</span>
 </h1>
 
   <p className="text-sm text-gray-500 mt-2">
@@ -653,11 +653,14 @@ const lifetime = yearly * 25;
       </div>
 
       <button
-        onClick={calculate}
-      className="w-full mt-6 md:mt-8 bg-[#67ab19] hover:bg-[#5a9616] text-white py-3 rounded-xl font-semibold text-sm md:text-base"
-      >
-        Calculate Bill
-      </button>
+  onClick={calculate}
+  className="w-full mt-6 md:mt-8 bg-brandPrimary text-white py-3 rounded-xl 
+  font-semibold text-sm md:text-base 
+  hover:bg-blue-800 hover:scale-[1.03] transition duration-300 
+  shadow-lg hover:shadow-xl"
+>
+  Calculate Bill →
+</button>
 
       {result && (
         <div className="mt-8 bg-gray-50 rounded-xl p-5 md:p-6 shadow-sm border">
@@ -699,7 +702,7 @@ const lifetime = yearly * 25;
                 <span>{result.balanceUnits}</span>
               </div>
 
-              <div className="flex justify-between text-green-600 font-semibold">
+              <div className="flex justify-between text-brandPrimary font-semibold">
                 <span>Total Savings</span>
                 <span>₹ {result.savings.toFixed(0)}</span>
               </div>
@@ -710,15 +713,15 @@ const lifetime = yearly * 25;
               </div>
          <div className="mt-6 bg-gradient-to-r from-green-50 to-green-100 p-4 md:p-5 rounded-xl text-center border border-green-200">
 
-  <p className="text-sm md:text-lg font-semibold text-green-700">
+  <p className="text-sm md:text-lg font-semibold text-brandPrimary">
     You Save ₹{(result.savings || 0).toFixed(0)} / per EB bill 
   </p>
 
-  <p className="text-sm md:text-lg font-semibold text-green-700  mt-2">
+  <p className="text-sm md:text-lg font-semibold text-brandPrimary  mt-2">
     ₹{(result.yearly || 0).toFixed(0)} per year
   </p>
 
-  <p className="text-base md:text-xl font-bold text-green-800 mt-2">
+  <p className="text-base md:text-xl font-bold text-brandPrimary mt-2">
     ₹{(result.lifetime || 0).toFixed(0)} in 25 years
   </p>
 
@@ -761,7 +764,7 @@ const lifetime = yearly * 25;
                 <span>₹ {result.network.toFixed(0)}</span>
               </div>
 
-              <div className="flex justify-between text-green-600 font-semibold">
+              <div className="flex justify-between text-brandPrimary font-semibold">
                 <span>Total Savings</span>
                 <span>₹ {result.savings.toFixed(0)}</span>
               </div>
@@ -776,15 +779,15 @@ const lifetime = yearly * 25;
 {/* ✅ NOW OUTSIDE */}
 <div className="mt-6 bg-gradient-to-r from-green-50 to-green-100 p-4 md:p-5 rounded-xl text-center border border-green-200">
 
-  <p className="text-sm md:text-lg font-semibold text-green-700">
+  <p className="text-sm md:text-lg font-semibold text-brandPrimary">
     You Save ₹{(result.savings || 0).toFixed(0)} / per EB bill 
   </p>
 
-  <p className="text-sm md:text-lg font-semibold text-green-700 mt-2">
+  <p className="text-sm md:text-lg font-semibold text-brandPrimary  mt-2">
     ₹{(result.yearly || 0).toFixed(0)} per year
   </p>
 
-  <p className="text-base md:text-xl font-bold text-green-800 mt-2">
+  <p className="text-base md:text-xl font-bold text-brandPrimary mt-2">
     ₹{(result.lifetime || 0).toFixed(0)} in 25 years
   </p>
   
@@ -797,7 +800,7 @@ const lifetime = yearly * 25;
     Estimated Solar System Cost
   </p>
 
-  <p className="text-xl md:text-2xl font-extrabold text-blue-700 mt-2 tracking-wide">
+  <p className="text-xl md:text-2xl font-extrabold text-brandPrimary mt-2 tracking-wide">
     ₹ {result.systemCost?.toFixed(0)}
   </p>
 
@@ -823,7 +826,7 @@ const lifetime = yearly * 25;
 
 <a
   href="mailto:enqenergy@seapol.com"
-  className="text-[#67ab19] font-semibold flex items-center gap-2 justify-center md:justify-start transition-all duration-200 hover:text-black hover:scale-105"
+  className="text-brandPrimary font-semibold flex items-center gap-2 justify-center md:justify-start transition-all duration-200 hover:text-black hover:scale-105"
 >
   <Mail size={16} />
   <span>enqenergy@seapol.com</span>
@@ -832,7 +835,7 @@ const lifetime = yearly * 25;
   <a
     href="https://wa.me/919500699955"
     target="_blank"
-    className="text-[#67ab19] font-semibold flex items-center gap-2 justify-center md:justify-start transition-all duration-200 hover:text-black hover:scale-105"
+    className="text-brandPrimary font-semibold flex items-center gap-2 justify-center md:justify-start transition-all duration-200 hover:text-black hover:scale-105"
   >
     <MessageCircle size={16} />
     <span>+91 95006 99955</span>
@@ -845,7 +848,7 @@ const lifetime = yearly * 25;
 
 <div className="mt-8 bg-gradient-to-r from-green-50 to-green-100 border border-green-200 p-5 rounded-xl shadow-sm">
 
-  <p className="text-base md:text-lg font-bold text-[#67ab19] mb-3 text-center">
+  <p className="text-base md:text-lg font-bold text-brandPrimary mb-3 text-center">
     How to Use
   </p>
 
@@ -919,7 +922,7 @@ const lifetime = yearly * 25;
 
   {/* SOLAR (HIGHLIGHT) */}
   <div className="mt-4 p-5 rounded-xl bg-green-50 border border-green-200 shadow-sm">
-    <h3 className="font-semibold text-lg text-[#67ab19] mb-2">
+    <h3 className="font-semibold text-lg text-brandPrimary mb-2">
       ☀️ Solar Installation
     </h3>
     <ul className="text-gray-700 text-base space-y-1">
@@ -931,7 +934,7 @@ const lifetime = yearly * 25;
   </div>
 
   {/* CTA */}
-  <p className="mt-6 text-[#67ab19] font-semibold text-lg">
+  <p className="mt-6 text-brandPrimary font-semibold text-lg">
     Switch to solar and turn your energy costs into long-term savings.
   </p>
 
