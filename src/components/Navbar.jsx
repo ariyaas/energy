@@ -70,7 +70,7 @@ export default function Navbar({ openQuote }) {
   <div className="flex justify-end p-6">
     <button
       onClick={() => setOpen(false)}
-      className="w-10 h-10 bg-[#8BC34A] text-white rounded-full text-xl flex items-center justify-center"
+      className="w-10 h-10 bg-brandPrimary text-white rounded-full text-xl flex items-center justify-center"
     >
       ✕
     </button>
@@ -107,7 +107,7 @@ export default function Navbar({ openQuote }) {
       <p className="text-xl font-semibold mb-4">Contact Us</p>
 
       <div className="flex items-center gap-4 mb-4">
-        <div className="w-11 h-11 bg-[#8BC34A] text-white rounded-full flex items-center justify-center">
+        <div className="w-11 h-11 bg-brandPrimary text-white rounded-full flex items-center justify-center">
           ☎
         </div>
         <div>
@@ -117,7 +117,7 @@ export default function Navbar({ openQuote }) {
       </div>
 
       <div className="flex items-center gap-4">
-        <div className="w-11 h-11 bg-[#8BC34A] text-white rounded-full flex items-center justify-center">
+        <div className="w-11 h-11 bg-brandPrimary text-white rounded-full flex items-center justify-center">
           ✉
         </div>
         <div>

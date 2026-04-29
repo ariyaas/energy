@@ -79,7 +79,7 @@ export default function QuoteModal({ open, onClose }) {
                    max-h-[90vh] overflow-y-auto fixed bottom-0 sm:static"
       >
         {/* GREEN HEADER */}
-        <div className="bg-gradient-to-r from-[#65a30d] to-[#84cc16] p-6 rounded-t-3xl">
+        <div className="bg-gradient-to-r from-brandPrimary to-blue-700 p-6 rounded-t-3xl">
           <h3 className="text-2xl font-bold text-white">
             Get a Free Solar Quote
           </h3>
@@ -116,7 +116,8 @@ export default function QuoteModal({ open, onClose }) {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="w-full border rounded-md px-4 py-4 text-sm focus:ring-2 focus:ring-[#84cc16] outline-none"
+              className="w-full border rounded-md px-4 py-4 text-sm focus:ring-2 focus:ring-brandPrimary
+focus:border-brandPrimary outline-none"
             />
 
             <input
@@ -126,7 +127,8 @@ export default function QuoteModal({ open, onClose }) {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="w-full border rounded-md px-4 py-4 text-sm focus:ring-2 focus:ring-[#84cc16] outline-none"
+              className="w-full border rounded-md px-4 py-4 text-sm focus:ring-2 focus:ring-brandPrimary
+focus:border-brandPrimary outline-none"
             />
 
             <input
@@ -135,7 +137,8 @@ export default function QuoteModal({ open, onClose }) {
               placeholder="Phone Number"
               value={formData.phone}
               onChange={handleChange}
-              className="w-full border rounded-md px-4 py-4 text-sm focus:ring-2 focus:ring-[#84cc16] outline-none"
+              className="w-full border rounded-md px-4 py-4 text-sm focus:ring-2 focus:ring-brandPrimary
+focus:border-brandPrimary outline-none"
             />
 
             <textarea
@@ -144,13 +147,14 @@ export default function QuoteModal({ open, onClose }) {
               placeholder="Project Requirement"
               value={formData.requirement}
               onChange={handleChange}
-              className="w-full border rounded-md px-4 py-3 text-sm resize-none focus:ring-2 focus:ring-[#84cc16] outline-none"
+              className="w-full border rounded-md px-4 py-3 text-sm resize-none focus:ring-2 focus:ring-brandPrimary
+focus:border-brandPrimary outline-none"
             />
 
             <button
               type="submit"
               disabled={status === "loading"}
-              className="w-full bg-gradient-to-r from-[#65a30d] to-[#84cc16]
+              className="w-full bg-gradient-to-r from-brandPrimary to-blue-700
                          text-white font-semibold py-4 rounded-xl
                          hover:scale-[1.02] active:scale-[0.98]
                          transition shadow-lg"
