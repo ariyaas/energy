@@ -98,10 +98,10 @@ export default function Services({ onQuoteClick }) {
 </section>
 
       {/* ================= ONE CALL SOLUTION ================= */}
-      <section className="py-16 md:py-24 bg-[#0B1F33] text-white animate-up">
+     <section className="py-16 md:py-24 bg-[#0B1F33] text-white animate-up">
   <div className="max-w-7xl mx-auto px-5 md:px-6 grid md:grid-cols-2 gap-10 md:gap-14 items-center">
 
-    <div>
+    <div className="space-y-5 md:space-y-6">
       <h2 className="text-3xl md:text-4xl font-bold mb-5 md:mb-6 leading-tight">
         True One-Call <span className="text-brandPrimary">Solar Solution</span>
       </h2>
@@ -114,19 +114,20 @@ export default function Services({ onQuoteClick }) {
           "Faster project execution",
           "24×7 technical support",
         ].map((item, i) => (
-          <li key={i} className="flex gap-3">
-            <FaCheckCircle className="text-brandPrimary" /> {item}
+          <li key={i} className="flex items-center gap-3">
+            <FaCheckCircle className="text-white text-base md:text-lg flex-shrink-0" /> 
+            <span>{item}</span>
           </li>
         ))}
       </ul>
     </div>
 
-    <div className="bg-white/10 rounded-2xl p-6 md:p-10 border border-white/20">
-      <h4 className="font-semibold mb-4 text-sm md:text-base">
+    <div className="bg-white/10 backdrop-blur-md rounded-2xl p-6 md:p-10 border border-white/20 shadow-xl">
+      <h4 className="font-semibold mb-4 text-sm md:text-lg text-center">
         This integrated approach ensures
       </h4>
 
-      <ul className="space-y-2 text-blue-100 text-sm md:text-base">
+      <ul className="space-y-3 text-blue-100 text-sm md:text-base text-center">
         <li>✓ Better Quality</li>
         <li>✓ Faster Delivery</li>
         <li>✓ Long-term Reliability</li>
@@ -355,9 +356,13 @@ export default function Services({ onQuoteClick }) {
 
       {/* NOTE */}
       <div className="bg-brandPrimary/10 border border-brandPrimary/20 rounded-lg p-4 text-sm text-gray-600 mb-8">
-        *Costs are based on average EV efficiency (0.15–0.18 kWh/km), electricity tariffs, and system performance.  
-        After the 3–4 year payback period, solar energy reduces charging cost to near-zero marginal cost.
-      </div>
+  *Costs are based on average EV efficiency (0.15–0.18 kWh/km), electricity tariffs, and system performance.  
+  After the 3–4 year payback period, solar energy reduces charging cost to near-zero marginal cost.  
+
+  <p className="mt-2">
+    This results in significantly lower running costs compared to petrol vehicles.
+  </p>
+</div>
 
       {/* SECTION 2 */}
       <h3 className="text-xl md:text-2xl font-bold text-[#0B1F33] mb-3">
@@ -673,7 +678,7 @@ export default function Services({ onQuoteClick }) {
  <button
   onClick={onQuoteClick}
   className="bg-brandPrimary text-white font-semibold px-8 md:px-12 py-3 md:py-4 rounded-xl
-  hover:bg-blue-800 hover:scale-105 transition duration-300 
+  hover:bg-brandDark hover:scale-105 transition duration-300 
   shadow-lg hover:shadow-xl"
 >
   Get a Free Quote →

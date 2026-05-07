@@ -116,7 +116,7 @@ text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[76px]">
   {/* PRIMARY BUTTON */}
   <button
     onClick={onQuoteClick}
-    className="bg-brandPrimary hover:bg-blue-700 text-white sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold transition hover:scale-105"
+    className="bg-brandPrimary hover:bg-brandDark  text-white sm:text-lg px-6 sm:px-8 py-3 sm:py-4 rounded-md font-semibold transition hover:scale-105"
   >
     Get Free Quote →
   </button>
@@ -129,7 +129,7 @@ text-2xl sm:text-4xl md:text-6xl lg:text-7xl xl:text-[76px]">
         "_blank"
       )
     }
-    className="hidden sm:inline-block border border-brandPrimary text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brandPrimary hover:text-white transition"
+    className="hidden sm:inline-block border  text-white px-8 py-4 rounded-md font-semibold text-lg hover:bg-brandDark hover:text-white transition"
   >
     Talk to Experts
   </button>

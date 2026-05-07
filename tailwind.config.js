@@ -11,6 +11,7 @@ export default {
       colors: {
         brandPrimary: "#1A75BC",
         brandSecondary: "#6E6F73",
+        brandDark: "#0B1F33", 
       },
     },
   },

@@ -9,7 +9,8 @@ import {
   FaShieldAlt,
   FaClock,
   FaHeadset
-} from "react-icons/fa";import solarWorker from "../assets/solar-worker.png";
+} from "react-icons/fa";
+import solarWorker from "../assets/newceo.png";
 export default function About({ onQuoteClick }) {
   return (
     <>
@@ -32,43 +33,44 @@ export default function About({ onQuoteClick }) {
   </div>
 </section>
 
+
+
+
       {/* ================= CEO MESSAGE (NEW SECTION) ================= */}
  {/* ================= CEO MESSAGE (FINAL PERFECT ALIGN) ================= */}
 <section className="bg-[#F7F9FC] py-16 md:py-20">
   <div className="max-w-7xl mx-auto px-5 md:px-6">
 
     {/* 🔹 TOP SECTION */}
-    <div className="grid lg:grid-cols-2 gap-10 md:gap-16 items-start mb-12">
-
+<div className="grid lg:grid-cols-[1fr_1.2fr] gap-4 md:gap-5 items-center mb-12">
       {/* IMAGE */}
-      <div className="rounded-3xl overflow-hidden shadow-xl h-[260px] sm:h-[320px] md:h-[420px] self-start">
+      <div className="rounded-2xl overflow-hidden shadow-lg w-full max-w-[360px] mx-auto lg:mx-0">
         <img
           src={solarWorker}
-          alt="Solar worker"
-          className="w-full h-full object-cover"
+          alt="CEO of SEAPOL Energy"
+          className="w-full h-[320px] md:h-[380px] object-cover"
         />
       </div>
 
       {/* TEXT */}
       <div className="max-w-xl">
 
-        <p className="text-brandPrimary font-semibold mb-2 text-sm uppercase tracking-wide">
-          From the Desk of CEO & CTO
+<p className="text-brandPrimary font-semibold mt-6 lg:mt-0 mb-2 text-sm uppercase tracking-wide">          From the Desk of CEO & CTO
         </p>
 
-        <h3 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#0B1F33] mb-5 leading-snug">
-          Engineering Expertise Meets Solar Innovation
+        <h3 className="text-2xl md:text-3xl font-bold text-[#0B1F33] mb-4 leading-snug">
+          Our Vision for the Future of Solar Energy
         </h3>
 
-        {/* ✅ FIRST PARAGRAPH */}
-        <p className="text-gray-700 text-sm md:text-base leading-[1.8] text-justify mb-4">
+        {/* PARAGRAPH 1 */}
+        <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify mb-4">
           With nearly 30 years of dedicated experience in the field of Electrical Engineering,
           I have been afforded the privilege of spearheading truly innovative projects and
           cultivating deep, authoritative expertise in my domain.
         </p>
 
-        {/* ✅ MOVED SECOND PARAGRAPH (NOW TOP) */}
-        <p className="text-gray-700 text-sm md:text-base leading-[1.8] text-justify">
+        {/* PARAGRAPH 2 */}
+        <p className="text-gray-700 text-sm md:text-base leading-relaxed text-justify">
           My seven year presence within the dynamic solar industry has been consistently driven
           by one singular, powerful purpose: the unwavering commitment to creating robust,
           reliable, and truly future-ready energy solutions.
@@ -78,14 +80,13 @@ export default function About({ onQuoteClick }) {
 
     </div>
 
-    {/* 🔹 FULL CONTENT (BOTTOM) */}
-    <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-sm md:text-base leading-[1.8] tracking-wide text-justify">
+    {/* 🔹 FULL CONTENT */}
+    <div className="max-w-4xl mx-auto space-y-5 text-gray-700 text-sm md:text-base leading-relaxed text-justify">
 
       <p>
         A pivotal moment in this ambitious journey is our recent amalgamation as an Engineering,
         Procurement, and Construction (EPC) Solar Company with SEAPOL, a distinguished Logistics
-        Enterprise boasting more than three decades of operational experience. This landmark event
-        marks the strategic birth of SEAPOL Energy Private Limited.
+        Enterprise boasting more than three decades of operational experience.
       </p>
 
       <p>
@@ -97,15 +98,13 @@ export default function About({ onQuoteClick }) {
 
       <p>
         Furthermore, our long-standing and productive association as a valued channel partner of
-        Evolve Energies Pvt Ltd strengthens our dedication to supplying high-performance solutions.
-        These solutions are consistently backed by foundational principles of innovation and trust.
+        Evolve Energies Pvt Ltd strengthens our dedication to supplying high-performance solutions
+        backed by innovation and trust.
       </p>
 
       <p>
-        This strategic collaboration not only fortifies our competitive standing within the market
-        but also grants us the ability to seamlessly leverage cutting-edge technologies and an
-        significantly expanded support network. Ultimately, this translates directly into superior
-        value and benefits for our most valued clients—i.e., YOU.
+        This collaboration allows us to leverage cutting-edge technologies and an expanded support
+        network, ultimately delivering superior value and benefits for our clients.
       </p>
 
     </div>

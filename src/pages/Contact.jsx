@@ -215,7 +215,7 @@ export default function Contact() {
     className="
       w-full bg-brandPrimary text-white font-semibold
       py-3 rounded-xl
-      hover:bg-blue-800 hover:scale-[1.02]
+      hover:bg-brandDark hover:scale-[1.02]
       transition duration-300 shadow-md hover:shadow-lg
     "
   >

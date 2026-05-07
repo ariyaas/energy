@@ -19,6 +19,8 @@
 
 //   )
 // }
+
+
 import { Routes, Route } from "react-router-dom"
 import ScrollToTop from "../components/ScrollToTop"
 
@@ -27,7 +29,7 @@ import About from "../pages/About"
 import Services from "../pages/Services"
 import Projects from "../pages/Projects"
 import Contact from "../pages/Contact"
-import SolarCalculatorPage from "../pages/SolarCalculator"
+import Blog from "../pages/BlogPage"
 
 export default function AppRoutes({ openQuote }) {
   
@@ -41,7 +43,7 @@ export default function AppRoutes({ openQuote }) {
         <Route path="/about" element={<About />} />
         <Route path="/services" element={<Services />} />
         <Route path="/projects" element={<Projects />} />
-        <Route path="/solar-calculator" element={<SolarCalculatorPage />} />
+        <Route path="/blog" element={<Blog />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </>

@@ -1,3 +1,4 @@
+import { useState } from "react";
 import PageBanner from "../components/PageBanner"
 import SolarModels from "../components/common/SolarModels"
 import {
@@ -7,8 +8,14 @@ import {
   FaBolt,
   FaCheckCircle,
 } from "react-icons/fa"
+import project1 from "../assets/project1.jpg";
+import project2 from "../assets/project2.jpg";
+import project3 from "../assets/project3.jpg";
+import project4 from "../assets/project5.png";
 
 export default function Projects({ onQuoteClick }) {
+
+  const [selectedImage, setSelectedImage] = useState(null);
   return (
     <>
       {/* PAGE BANNER */}
@@ -85,64 +92,92 @@ export default function Projects({ onQuoteClick }) {
 </section>
 
       {/* FEATURED PROJECTS */}
-  <section className="bg-white py-16 md:py-24">
-  <div className="max-w-7xl mx-auto px-6">
+   <section className="bg-white py-14 md:py-20">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6">
 
     {/* TITLE */}
-    <h2 className="text-3xl md:text-4xl font-bold text-[#0B1F33] text-center mb-16">
-      Featured Projects
+    <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#0B1F33] text-center mb-10 md:mb-14">
+      Our Residential Project
     </h2>
 
-    <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-10">
+    <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
 
-      {[
-        { name:"Commercial Rooftop – Chennai", capacity:"500 kW", type:"Commercial" },
-        { name:"Industrial Plant – Bangalore", capacity:"2 MW", type:"Industrial" },
-        { name:"Utility Solar Park – Tamil Nadu", capacity:"50 MW", type:"Utility Scale" },
-      ].map((p, i) => (
+      {/* LEFT - IMAGE GRID */}
+      <div className="grid grid-cols-2 gap-3 sm:gap-5">
 
-        <div
-          key={i}
-          className="
-            group border border-gray-200 rounded-2xl p-8 
-            transition-all duration-300 
-            hover:shadow-2xl hover:-translate-y-2 hover:border-brandPrimary
-          "
-        >
+        {[project1, project2, project3, project4].map((img, i) => (
+          <div
+            key={i}
+            className="overflow-hidden rounded-xl sm:rounded-2xl shadow-md group cursor-pointer"
+            onClick={() => setSelectedImage(img)}
+          >
+            <img
+              src={img}
+              alt={`Project ${i}`}
+              className="
+                w-full 
+                h-32 sm:h-44 md:h-52 
+                object-cover 
+                transition-transform duration-300 
+                group-hover:scale-110
+              "
+            />
+          </div>
+        ))}
 
-          {/* TITLE */}
-          <h3 className="font-bold text-xl text-[#0B1F33] mb-2">
-            {p.name}
-          </h3>
+      </div>
 
-          {/* DETAILS */}
-          <p className="text-gray-600">
-            Capacity: <strong>{p.capacity}</strong>
+      {/* RIGHT - CONTENT */}
+      <div className="text-center md:text-left">
+
+        <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#0B1F33] mb-4 md:mb-5 leading-snug">
+          Residential Solar Installation – Chennai
+        </h3>
+
+        {/* INFO BOX */}
+        <div className="bg-[#F7F9FC] rounded-xl p-4 sm:p-5 mb-5 md:mb-6 space-y-2 sm:space-y-3 border border-gray-100 text-sm sm:text-base">
+
+          <p className="text-gray-700">
+            <span className="font-semibold text-[#0B1F33]">Capacity:</span> 5 kW
           </p>
 
-          <p className="text-gray-600 mb-5">
-            Project Type: {p.type}
+          <p className="text-gray-700">
+            <span className="font-semibold text-[#0B1F33]">Type:</span> Residential
           </p>
 
-          {/* BUTTON */}
-          <button className="
-            text-brandPrimary font-semibold 
-            flex items-center gap-2
-            group-hover:gap-3 transition-all
-          ">
-            View Project →
-          </button>
-
-          {/* UNDERLINE ANIMATION */}
-          <div className="h-[2px] w-0 bg-brandPrimary mt-2 group-hover:w-full transition-all duration-300"></div>
+          <p className="text-gray-700">
+            <span className="font-semibold text-[#0B1F33]">Location:</span> Kayalpattinam, Tamilnadu.
+          </p>
 
         </div>
 
-      ))}
+        {/* DESCRIPTION */}
+        <p className="text-gray-600 text-sm sm:text-base leading-relaxed max-w-xl mx-auto md:mx-0">
+          This residential rooftop solar project was designed to maximize energy
+          efficiency while reducing long-term electricity costs. Our team handled
+          complete EPC execution including design, installation, and commissioning
+          using high-quality components to ensure long-lasting performance.
+        </p>
+
+      </div>
 
     </div>
   </div>
 </section>
+
+
+ {selectedImage && (
+  <div
+    className="fixed inset-0 bg-black/90 flex items-center justify-center z-50 p-4"
+    onClick={() => setSelectedImage(null)}
+  >
+    <img
+      src={selectedImage}
+      alt="Full View"
+      className="w-full max-w-4xl max-h-[90vh] object-contain rounded-xl"
+    />
+  </div>
+)}
 
       {/* WHY PROJECTS SUCCEED */}
       <section className="py-16 md:py-24 bg-[#0B1F33] text-white">
@@ -166,6 +201,8 @@ export default function Projects({ onQuoteClick }) {
           </div>
         </div>
       </section>
+
+     
 
       {/* FINAL GREEN CTA */}
       <section className="bg-[#84CC16] py-16 md:py-24 text-center text-[#0B1F33]">

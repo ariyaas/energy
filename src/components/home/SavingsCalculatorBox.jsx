@@ -19,7 +19,7 @@ export default function SavingsCalculatorBox() {
       {/* BUTTON */}
      <a
   href="/solar-calculator"
-  className="inline-block mt-8 bg-brandPrimary hover:bg-blue-700 text-white px-8 py-4 rounded-xl text-lg font-semibold transition hover:scale-105"
+  className="inline-block mt-8 bg-brandPrimary hover:bg-brandDark text-white px-8 py-4 rounded-xl text-lg font-semibold transition hover:scale-105"
 >
   Calculate Now →
 </a>

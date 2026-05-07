@@ -139,7 +139,7 @@ export default function About() {
   variants={fadeUp}
   whileHover={{ scale: 1.08 }}
   onClick={() => navigate("/services")}
-  className="mt-8 bg-brandPrimary hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition"
+  className="mt-8 bg-brandPrimary hover:bg-brandDark text-white px-6 py-3 rounded-md font-semibold transition"
 >
   View Our Services →
 </motion.button>

@@ -1,7 +1,6 @@
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
 import { useState, useEffect } from "react"
 import logo from "../assets/logo.svg"
-
 
 export default function Navbar({ openQuote }) {
   const [open, setOpen] = useState(false)
@@ -23,18 +22,27 @@ export default function Navbar({ openQuote }) {
 
           {/* DESKTOP MENU */}
          <nav className="hidden lg:flex justify-self-center items-center gap-12 text-[15px] font-semibold text-gray-600">
-  <Link to="/" className="navLink">Home</Link>
-  <Link to="/about" className="navLink">About</Link>
-  <Link to="/services" className="navLink">Services</Link>
-  <Link to="/projects" className="navLink">Projects</Link>
-  <Link to="/solar-calculator" className="navLink">Calculator</Link>
-  <Link to="/contact" className="navLink">Contact</Link>
+
+  <NavLink to="/" className={({isActive}) => isActive ? "navLink text-brandPrimary" : "navLink"}>Home</NavLink>
+
+  <NavLink to="/about" className={({isActive}) => isActive ? "navLink text-brandPrimary" : "navLink"}>About</NavLink>
+
+  <NavLink to="/services" className={({isActive}) => isActive ? "navLink text-brandPrimary" : "navLink"}>Services</NavLink>
+
+  <NavLink to="/projects" className={({isActive}) => isActive ? "navLink text-brandPrimary" : "navLink"}>Projects</NavLink>
+
+  <NavLink to="/blog" className={({isActive}) => isActive ? "navLink text-brandPrimary" : "navLink"}>Blog</NavLink>
+
+  <NavLink to="/contact" className={({isActive}) => isActive ? "navLink text-brandPrimary" : "navLink"}>Contact</NavLink>
+
 </nav>
+
+
   <div className="justify-self-end hidden lg:block">
-  <button
-    onClick={openQuote}
-    className="group flex items-center bg-brandPrimary hover:bg-blue-700 rounded-full pl-7 pr-2 py-2 font-semibold text-white hover:scale-105 transition"
-  >
+ <button
+  onClick={openQuote}
+  className="group flex items-center bg-brandPrimary hover:bg-brandDark rounded-full pl-7 pr-2 py-2 font-semibold text-white hover:scale-105 transition"
+>
     <span className="mr-4">Get In Touch</span>
 
     <span className="w-10 h-10 bg-white text-brandPrimary rounded-full flex items-center justify-center text-lg group-hover:rotate-45 transition">
@@ -84,7 +92,7 @@ export default function Navbar({ openQuote }) {
       { name: "About", path: "/about" },
       { name: "Services", path: "/services" },
       { name: "Projects", path: "/projects" },
-      { name: "Calculator", path: "/solar-calculator" },
+      { name: "Blog", path: "/blog" },
       { name: "Contact", path: "/contact" },
     ].map((item, i) => (
       <Link

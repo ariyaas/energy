@@ -151,16 +151,17 @@ focus:border-brandPrimary outline-none"
 focus:border-brandPrimary outline-none"
             />
 
-            <button
-              type="submit"
-              disabled={status === "loading"}
-              className="w-full bg-gradient-to-r from-brandPrimary to-blue-700
-                         text-white font-semibold py-4 rounded-xl
-                         hover:scale-[1.02] active:scale-[0.98]
-                         transition shadow-lg"
-            >
-              {status === "loading" ? "Submitting..." : "Request Quote"}
-            </button>
+         <button
+  type="submit"
+  disabled={status === "loading"}
+  className="w-full bg-gradient-to-r from-brandPrimary to-blue-700
+             text-white font-semibold py-4 rounded-xl
+             hover:from-brandDark hover:to-brandDark
+             hover:scale-[1.02] active:scale-[0.98]
+             transition duration-300 shadow-lg"
+>
+  {status === "loading" ? "Submitting..." : "Request Quote"}
+</button>
           </form>
         </div>
       </div>

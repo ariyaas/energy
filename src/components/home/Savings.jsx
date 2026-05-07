@@ -106,7 +106,7 @@ function Savings() {
   className="mt-14 bg-gradient-to-r from-brandPrimary to-blue-700 rounded-2xl py-10 text-center text-white shadow-xl"
 >
   <img src={growthIcon} className="mx-auto w-10 mb-4" />
-  <h3 className="text-[24px] md:text-[26px] font-bold">
+  <h3 className="text-[20px] md:text-[26px] font-bold">
     Commercial & Industrial Projects
   </h3>
   <p className="mt-2 text-white/90">
