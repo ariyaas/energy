@@ -102,6 +102,7 @@ export default function Contact() {
         <FaUserTie />
       </div>
 
+
       {/* TEXT */}
       <div>
         <p className="font-semibold text-[#0B1F33] text-sm md:text-base">
