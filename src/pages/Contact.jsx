@@ -285,19 +285,7 @@ export default function Contact() {
 
 
       {/* GOOGLE MAP */}
-      <section className="bg-white pb-16 md:pb-24">
-        <div className="max-w-7xl mx-auto px-5 md:px-6">
-          <div className="rounded-3xl overflow-hidden shadow-xl border border-gray-200">
-            <iframe
-              title="Seapol Energy Location"
-              className="w-full h-[320px] md:h-[420px]"
-              loading="lazy"
-              src="https://www.google.com/maps?q=Moore%20Street%20Chennai&output=embed"
-            />
-          </div>
-        </div>
-      </section>
-
+     
     </>
   );
 }

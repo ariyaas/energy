@@ -56,7 +56,7 @@ export default function Navbar({ openQuote }) {
        <button
   onClick={()=>setOpen(true)}
   className="lg:hidden absolute right-[6%] top-1/2 -translate-y-1/2
-             w-12 h-12 bg-black rounded-full flex items-center justify-center shadow-lg"
+             w-12 h-12 bg-brandPrimary rounded-full flex items-center justify-center shadow-lg"
 >
   <div className="space-y-1">
     <span className="block w-5 h-[2px] bg-white"></span>
