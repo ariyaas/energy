@@ -79,7 +79,6 @@ export default function Contact() {
   {[
     { name: "Omska Riyaz Maraikayer", role: "CEO & CTO" },
     { name: "Abdul Razak", role: "Business Development" },
-    { name: "G. Varadaraj", role: "Technical Head" },
     { name: "T. Abdulla", role: "Project Management" },
   ].map((item, i) => (
 
@@ -143,7 +142,7 @@ export default function Contact() {
       <div className="w-10 h-10 rounded-lg bg-brandPrimary/10 text-brandPrimary flex items-center justify-center">
         <FaEnvelope />
       </div>
-      <span>energy@seapol.com</span>
+      <span>enqenergy@seapol.com</span>
     </div>
 
     {/* ADDRESS */}
@@ -152,7 +151,7 @@ export default function Contact() {
         <FaMapMarkerAlt />
       </div>
       <span>
-        4th Floor, Dheen Estate, Moore Street, Chennai – 600001
+        4th Floor, Dheen Estate,42/85 Moore Street,George Town, Chennai – 600001
       </span>
     </div>
 

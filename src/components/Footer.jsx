@@ -1,5 +1,6 @@
 import footerBg from "../assets/solar-farm.webp"
 import { FaFacebookF, FaTwitter, FaYoutube, FaLinkedinIn } from "react-icons/fa"
+import { Link } from "react-router-dom"
 
 export default function Footer() {
   return (
@@ -41,27 +42,59 @@ export default function Footer() {
           </div>
 
           {/* COMPANY */}
-          <div>
-            <h4 className="footerTitle">Company</h4>
-            <ul className="footerLinks">
-              <li className="hover:text-brandPrimary">Home</li>
-              <li className="hover:text-brandPrimary">About Us</li>
-              <li className="hover:text-brandPrimary">Our Services</li>
-              <li className="hover:text-brandPrimary">Latest Blog</li>
-              <li className="hover:text-brandPrimary">Meet Our Team</li>
-            </ul>
-          </div>
+         <div>
+  <h4 className="footerTitle">Our Services</h4>
+
+  <ul className="footerLinks">
+    <li>
+      <Link to="/services">Residential Solar</Link>
+    </li>
+    <li>
+      <Link to="/services">Commercial Solar</Link>
+    </li>
+    <li>
+      <Link to="/services">Solar Installation</Link>
+    </li>
+    <li>
+      <Link to="/services">Maintenance & Support</Link>
+    </li>
+    <li>
+      <Link to="/contact">Get a Free Quote</Link>
+    </li>
+  </ul>
+</div>
 
           {/* QUICK LINKS */}
-          <div>
-            <h4 className="footerTitle">Quick Links</h4>
-            <ul className="footerLinks">
-              <li className="hover:text-brandPrimary">Projects</li>
-              <li className="hover:text-brandPrimary">Solar Energy</li>
-              <li className="hover:text-brandPrimary">Testimonials</li>
-              <li className="hover:text-brandPrimary">Contact Us</li>
-            </ul>
-          </div>
+        {/* QUICK LINKS */}
+<div>
+  <h4 className="footerTitle">Quick Links</h4>
+
+  <ul className="footerLinks">
+    <li>
+      <Link to="/projects" className="hover:text-brandPrimary transition">
+        Projects
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/services" className="hover:text-brandPrimary transition">
+        Services
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/about" className="hover:text-brandPrimary transition">
+        About Us
+      </Link>
+    </li>
+
+    <li>
+      <Link to="/contact" className="hover:text-brandPrimary transition">
+        Contact Us
+      </Link>
+    </li>
+  </ul>
+</div>
 
           {/* CONTACT */}
           <div>

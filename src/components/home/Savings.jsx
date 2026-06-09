@@ -1,7 +1,8 @@
 import homeIcon from "../../assets/icons/home-white.svg"
 import growthIcon from "../../assets/icons/growth.svg"
-import SavingsCalculatorBox from "./SavingsCalculatorBox"
+// import SavingsCalculatorBox from "./SavingsCalculatorBox"
 import { motion } from "framer-motion"
+import companyQr from "../../assets/scana.png"
 
 const fadeUp = {
   hidden: { opacity: 0, y: 40 },
@@ -95,8 +96,45 @@ function Savings() {
   *Savings shown are approximate and may vary based on usage, location, and system performance.
 </div>
 
+
+
+{/* COMPANY PAYMENT QR */}
+<motion.div
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  viewport={{ once: true }}
+  transition={{ duration: 0.6 }}
+  className="mt-14 max-w-lg mx-auto text-center bg-brandPrimary/40 backdrop-blur-md rounded-2xl p-8 shadow-lg"
+>
+  <h3 className="text-[22px] font-bold text-[#0B1F33] mb-2">
+    Scan & Pay
+  </h3>
+
+  <p className="text-sm text-gray-500 mb-6">
+    Secure payment to our company account
+  </p>
+
+  {/* QR IMAGE */}
+  <img
+    src={companyQr}
+    alt="Company QR"
+    className="w-[320px] md:w-[380px] h-auto mx-auto object-contain"
+  />
+
+  {/* COMPANY DETAILS */}
+  <div className="mt-4 space-y-1">
+    <p className="font-semibold text-[#0B1F33]">
+      Seapol Energy Pvt Ltd
+    </p>
+
+    <p className="text-sm text-gray-500">
+      UPI / Bank Payment Accepted
+    </p>
+  </div>
+</motion.div>
+
         {/* CALCULATOR */}
-        <SavingsCalculatorBox />
+        {/* <SavingsCalculatorBox /> */}
 
         {/* COMMERCIAL CTA */}
         <motion.div
